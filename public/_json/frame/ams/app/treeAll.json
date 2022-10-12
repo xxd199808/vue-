@@ -1,0 +1,138 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": [
+        {
+            "id": "1",
+            "code": "SYS",
+            "name": "系统管理",
+            "type": "group",
+            "menuType": "project",
+            "router": "",
+            "icon": "el-icon-folder",
+            "orderNo": 1,
+            "parentId": "#",
+            "enable": true,
+            "children": [
+                {
+                    "id": "11",
+                    "code": "SYS-ZONE",
+                    "name": "区划管理",
+                    "type": "menu",
+                    "menuType": "frame",
+                    "router": "zone",
+                    "icon": "el-icon-menu",
+                    "orderNo": 1,
+                    "parentId": "1",
+                    "enable": true,
+                    "children": []
+                },
+                {
+                    "id": "12",
+                    "code": "SYS-PERSON",
+                    "name": "机构人员管理",
+                    "type": "menu",
+                    "menuType": "frame",
+                    "router": "person",
+                    "icon": "el-icon-menu",
+                    "orderNo": 2,
+                    "parentId": "1",
+                    "enable": true,
+                    "children": []
+                },
+                {
+                    "id": "13",
+                    "code": "SYS-ROLE",
+                    "name": "角色维护",
+                    "type": "menu",
+                    "menuType": "frame",
+                    "router": "role",
+                    "icon": "el-icon-menu",
+                    "orderNo": 3,
+                    "parentId": "1",
+                    "enable": true,
+                    "children": []
+                },
+                {
+                    "id": "14",
+                    "code": "SYS-TEAM",
+                    "name": "分组管理",
+                    "type": "menu",
+                    "menuType": "frame",
+                    "router": "team",
+                    "icon": "el-icon-menu",
+                    "orderNo": 4,
+                    "parentId": "1",
+                    "enable": true,
+                    "children": []
+                },
+                {
+                    "id": "15",
+                    "code": "SYS-DICT",
+                    "name": "字典管理",
+                    "type": "menu",
+                    "menuType": "frame",
+                    "router": "dict",
+                    "icon": "el-icon-menu",
+                    "orderNo": 5,
+                    "parentId": "1",
+                    "enable": true,
+                    "children": []
+                },
+                {
+                    "id": "16",
+                    "code": "SYS-MENU",
+                    "name": "菜单管理",
+                    "type": "menu",
+                    "menuType": "frame",
+                    "router": "menu",
+                    "icon": "el-icon-menu",
+                    "orderNo": 6,
+                    "parentId": "1",
+                    "enable": true,
+                    "children": []
+                },
+                {
+                    "id": "17",
+                    "code": "SYS-WORKDAY",
+                    "name": "工作日管理",
+                    "type": "menu",
+                    "menuType": "frame",
+                    "router": "workday",
+                    "icon": "el-icon-menu",
+                    "orderNo": 7,
+                    "parentId": "1",
+                    "enable": true,
+                    "children": []
+                },
+                {
+                    "id": "18",
+                    "code": "SYS-REPORT",
+                    "name": "报表管理",
+                    "type": "menu",
+                    "menuType": "frame",
+                    "router": "report",
+                    "icon": "el-icon-menu",
+                    "orderNo": 8,
+                    "parentId": "1",
+                    "enable": true,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": "a10cc74cc56d4c7fadc18fc482454692",
+            "code": "other",
+            "name": "其他菜单",
+            "type": "menu",
+            "menuType": "frame",
+            "router": "zone",
+            "icon": "el-icon-menu",
+            "orderNo": 10,
+            "parentId": "#",
+            "enable": true,
+            "children": []
+        }
+    ]
+}

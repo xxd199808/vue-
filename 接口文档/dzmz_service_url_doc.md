@@ -1,0 +1,179 @@
+#### 	查询所有的服务地址
+
+ /beaver/xtgl/address/all
+
+ response json
+ ```json
+ {
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": [
+        {
+            "id": "7667ab49-d2eb-43e3-971f-75000fb518bf",
+            "service_address": "https://www.baidu.com",
+            "comment": "666",
+            "create_time": "2021-12-13 13:44:21",
+            "create_by": "",
+            "orgId": "fdf6afab-b8e5-4b2a-ae39-b278824e9b34"
+        },
+        {
+            "id": "2998a767-f8e1-4e36-a1b9-15b3f0a01d3e",
+            "service_address": "wims.wisoft.com.cn",
+            "comment": "wims.wisoft.com.cn",
+            "create_time": "2021-12-13 10:45:30",
+            "create_by": "",
+            "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17"
+        },
+        {
+            "id": "6abb50ea-5af3-4611-9373-4c02d89b7f01",
+            "service_address": "http://www.baidu.com",
+            "comment": "22222",
+            "create_time": "2021-12-07 13:44:26",
+            "create_by": "",
+            "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17"
+        },
+        {
+            "id": "d81eed04-b633-4e0d-8ad6-e935971e056b",
+            "service_address": "http://192.168.1.66:8889",
+            "comment": "22222",
+            "create_time": "2021-12-07 16:15:44",
+            "create_by": "",
+            "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17"
+        },
+        {
+            "id": "412d4351-5f09-4a40-afa6-e80a1bb2c050",
+            "service_address": "www.douban.com",
+            "comment": "www.douban.com",
+            "create_time": "2021-12-14 10:18:04",
+            "create_by": "",
+            "orgId": "ROOT"
+        },
+        {
+            "id": "669c4503-0123-4c23-8a5b-9dc354ed89d8",
+            "service_address": "http://192.10.110.112:8001",
+            "comment": "igov",
+            "create_time": "2021-12-22 10:06:54",
+            "create_by": "",
+            "orgId": "ROOT"
+        },
+        {
+            "id": "002b7a60-a493-41fe-81d4-09f32bca69c6",
+            "service_address": "http://192.10.110.113:8888",
+            "comment": "aaa",
+            "create_time": "2021-12-23 13:03:16",
+            "create_by": "",
+            "orgId": "ROOT"
+        },
+        {
+            "id": "07d39cd1-cd1d-4c21-ba62-63a27c4ec589",
+            "service_address": "https://httpbin.org",
+            "comment": "",
+            "create_time": "2022-04-13 14:24:21",
+            "create_by": "",
+            "orgId": "ROOT"
+        }
+    ]
+}
+ ```
+
+### 分页请求服务地址
+
+/beaver/xtgl/address/search
+ request json
+
+ ```json
+ {
+    "pageNum":1,
+    "pageSize":2,
+    "searchText":"w",
+    "orgId":""
+}
+ ```
+
+ resp json
+ ```json
+ {
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "totalcount": 4,
+        "totalPages": null,
+        "percount": 10,
+        "curpage": 1,
+        "retlist": [
+            {
+                "id": "7667ab49-d2eb-43e3-971f-75000fb518bf",
+                "service_address": "https://www.baidu.com",
+                "comment": "666",
+                "create_time": "2021-12-13 13:44:21",
+                "create_by": "",
+                "orgId": "fdf6afab-b8e5-4b2a-ae39-b278824e9b34"
+            },
+            {
+                "id": "6abb50ea-5af3-4611-9373-4c02d89b7f01",
+                "service_address": "http://www.baidu.com",
+                "comment": "22222",
+                "create_time": "2021-12-07 13:44:26",
+                "create_by": "",
+                "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17"
+            }
+        ],
+        "pageNumber": 1
+    }
+}
+ ```
+
+
+ #### 删除服务分组
+
+ /beaver/xtgl/address/delete
+
+ request json
+ ```json
+ {
+    "id":"123"
+}
+ ```
+
+ response json
+ ```json
+ {
+    "success": false,
+    "code": 200,
+    "msg": "地址已被删除",
+    "data": null
+}
+ ```
+
+ #### 保存或修改服务地址
+
+/beaver/xtgl/address/save
+
+ request json
+ ```json
+ {
+    "id":"728b5c8e-a063-487e-ae1f-6760d32103a8",
+    "service_address":"http://bing.com",
+    "comment":"测试地址21"
+}
+ ```
+
+
+ response json
+ ```json
+ {
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "728b5c8e-a063-487e-ae1f-6760d32103a8",
+        "service_address": "http://bing.com",
+        "comment": "测试地址21",
+        "create_time": null,
+        "create_by": "62913afc-995a-4813-88ae-5070187cd317",
+        "orgId": null
+    }
+}
+ ```

@@ -1,0 +1,27 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": {
+        "totalpage": 1,
+        "totalcount": 2,
+        "curpage": 1,
+        "retlist": [
+            {
+                "id": "73d24366ea6b40a6936a8d0237e29941",
+                "loginname": "u2",
+                "password": "$2a$10$83uSqELsPYPMyaqWSDygj.AJCEJZCh1ppVZk/ThGaPgEas7rajtJ6",
+                "realname": "用户2",
+                "depId": "84f5d088ab4d45168fc1b8f6dcc73c13"
+            },
+            {
+                "id": "c4c97e4fcb574520af30b20d123a8d71",
+                "loginname": "11",
+                "password": "$2a$10$.JFYZyvZvDBvxqNr5fhchOpChRuzlRRXnIHX02lEQK8X0YnB6O6Pe",
+                "realname": "11",
+                "enable": true,
+                "depId": "84f5d088ab4d45168fc1b8f6dcc73c13"
+            }
+        ]
+    }
+}

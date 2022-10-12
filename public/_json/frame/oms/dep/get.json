@@ -1,0 +1,14 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": {
+        "id": "dcfb6f179b5e4f0c87d1c2c20e457789",
+        "code": "666",
+        "name": "testbm",
+        "type": 2,
+        "parentId": "84f5d088ab4d45168fc1b8f6dcc73c13",
+        "ouId": "84f5d088ab4d45168fc1b8f6dcc73c13",
+        "zoneId": "65687a6ffe3943958087fba8f3795a43"
+    }
+}

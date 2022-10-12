@@ -1,0 +1,51 @@
+1、登录：
+地址：http://192.168.0.109:8088/beaver/sso/login
+请求方式：post
+参数: {
+    account: 'account2222@qq.com'
+    password: '222222'
+}
+返回值：
+{
+    "success": true,
+    "code": 200,
+    "msg": "登录成功",
+    "data": "4e7b2645-f1bf-4b4b-98fb-8d87cc92848d"
+}
+
+2、注销：
+地址：http://192.168.0.109:8088/beaver/sso/logout
+请求方式：post
+Header：  token=xxxxxxxxxxxx  登录时获取的token
+返回值：
+{
+    "success": true,
+    "code": 204,
+    "msg": "注销成功",
+    "data": null
+}
+
+3、获取用户信息：
+地址：http://192.168.0.109:8088/beaver/sso/getUser
+请求方式：post
+Header：  token=xxxxxxxxxxxx  登录时获取的token
+返回值：
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "62913afc-995a-4813-88ae-5070187cd317",
+        "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17",
+        "role": "0",
+        "name": "王2222",
+        "account": "account2222@qq.com",
+        "password": null,
+        "createdTime": "2022-04-13 19:48:24",
+        "updatedTime": null,
+        "createdBy": null,
+        "updatedBy": null,
+        "deleteFlag": "0",
+        "registerType": "2"
+    }
+}

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+// 覆写 wiv 样式
+
+//------ pagebar BEGIN
+@pagebar_size: 32px;
+.pagebar_font() {
+    color: #7F7F7F;
+    font-size: 14px;
+}
+.pagebar_border() {
+    line-height: @pagebar_size - 2; //去掉边框
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+
+.wiv-pagebar {
+    position: relative;
+    margin-top: 16px;
+    .pagebar_font();
+}
+
+.wiv-pagebar-item {
+    height: @pagebar_size;
+    line-height: @pagebar_size;
+}
+//跳转到第几页
+.wiv-pagebar-go-input {
+    width: 38px;
+    .pagebar_border();
+    .pagebar_font();
+    background: #fff;
+}
+.wiv-pagebar-go-button {
+    width: 60px;
+    .pagebar_border();
+    .pagebar_font();
+    background: #fff;
+    &:hover {
+        color: #fff;
+        border: 1px solid @c_main;
+        background: @c_main;
+        opacity: 1;
+    }
+}
+//页码
+.wiv-pagebar-link {
+    //padding: 0 10px;
+    .pagebar_border();
+    font-size: @s_font;
+
+    &:not(._disabled):hover,
+    &._active {
+        border-color: @c_main;
+        background-color: @c_main;
+        border: 1px solid @c_main;
+    }
+    &._disabled {
+        color: #c2c2c2;
+    }
+}
+//------ pagebar END
+
+//弹框
+.wiv-dialog-body {
+    padding: 10px;
+}
+.wiv-dialog-foot {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff;
+}

@@ -1,0 +1,101 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "apiBase": {
+            "id": "7d5bdeac-e181-4843-aab6-19714804de35",
+            "name": "67",
+            "api_group_id": "6ee4d939-4ed5-4c7e-88e5-6c9c76858be3",
+            "auth_method": null,
+            "comment": null,
+            "logoNfmId": null,
+            "orgId": null,
+            "update_time": "2021-12-14 16:11:05",
+            "status": 1
+        },
+        "apiRequestDef": {
+            "id": "6d16b486-1278-424f-bb6f-8f183ff27f78",
+            "api_base_id": "7d5bdeac-e181-4843-aab6-19714804de35",
+            "req_protocals": "HTTPS",
+            "req_method": "POST",
+            "req_body_type": "multipart/form-data",
+            "base_path": "/",
+            "req_path": "67",
+            "req_mode": 9,
+            "fullPath": "/67"
+        },
+        "apiParameters": [
+        {
+            "id": "5c13bc13-0719-4c69-9bfa-10055bbdd8cb",
+            "api_base_id": "7d5bdeac-e181-4843-aab6-19714804de35",
+            "req_param_name": "测试常量参数",
+            "req_param_position": "parameterPath",
+            "req_param_type": "String",
+            "req_param_notnull": true,
+            "req_param_default_val": "67",
+            "req_param_example": "67",
+            "req_param_comment": "67",
+            "serv_param_name": "673",
+            "serv_param_position": "parameterPath",
+            "paramType": "CONSTANT",
+            "nameNotChanged": false
+        }],
+        "apiServiceDef": {
+            "id": "acd51756-34d3-42a5-8b61-a2067fc98856",
+            "api_base_id": "7d5bdeac-e181-4843-aab6-19714804de35",
+            "service_url": "http://192.168.1.66:8889",
+            "service_path": "/67test",
+            "service_method": "POST",
+            "service_expire": 67
+        },
+        "apiErrorCodes": [
+        {
+            "id": "742525d2-3fc7-4edf-9157-6f8a0aa90389",
+            "errCode": "8003",
+            "errMsg": "服务维护中",
+            "description": "测试错误码",
+            "apiBaseId": "7d5bdeac-e181-4843-aab6-19714804de35",
+            "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17"
+        },
+        {
+            "id": "4b6320f1-a655-43c8-b716-ab0477ea1911",
+            "errCode": "8002",
+            "errMsg": "服务维护中2",
+            "description": "测试错误码2",
+            "apiBaseId": "7d5bdeac-e181-4843-aab6-19714804de35",
+            "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17"
+        }],
+        "apiResponseDef": {
+            "id": "98d96267-e5e8-4f41-a883-42d251b4c2b4",
+            "apiBaseId": "7d5bdeac-e181-4843-aab6-19714804de35",
+            "respType": "application/json",
+            "respExample": "{\"success\":false,\"code\":400,\"msg\":\"API服务端信息已经存在,不能新增\",\"data\":{\"id\":\"123\",\"name\":\"123\"}}",
+            "successFlag": "success",
+            "successVal": "true",
+            "dataFlag": "data"
+        },
+        "apiResults": [
+        {
+            "id": "8baa1b69-3753-4cdd-b539-9da4a8a529ad",
+            "apiBaseId": "7d5bdeac-e181-4843-aab6-19714804de35",
+            "resultCode": "id",
+            "resultDesc": "主键"
+        },
+        {
+            "id": "f2d30683-3996-49aa-bb97-8f3e34659dea",
+            "apiBaseId": "7d5bdeac-e181-4843-aab6-19714804de35",
+            "resultCode": "name",
+            "resultDesc": "属性值"
+        }],
+        "apiAccessRule": {
+            "id": "af19863e-4063-477b-8150-fcb6bb765ef1",
+            "apiBaseInfoId": "7d5bdeac-e181-4843-aab6-19714804de35",
+            "limitPerDay": 80,
+            "tps": 1000,
+            "accessStartTime": "2021-12-14 16:11:05",
+            "accessEndTime": "2022-10-01 16:11:05"
+        },
+        "routeCode": "route"
+    }
+}

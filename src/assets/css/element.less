@@ -1,0 +1,207 @@
+@charset "UTF-8";
+// 覆写element样式
+.el-button--small,
+.el-table--small,
+.el-table__expand-icon,
+.el-descriptions--small {
+    font-size: 14px;
+}
+
+
+// 按钮颜色定义
+.btn-color(@btn-color){
+    &,
+    &:focus{
+        color: @c_white;
+        background-color: @btn-color;
+        border-color: @btn-color;
+        &:hover{
+            color: @c_white;
+            background-color: mix(@c_white, @btn-color, 20%);
+            border-color: mix(@c_white, @btn-color, 20%);
+        }
+    }
+    &.is-disabled{
+        &,
+        &:hover,
+        &:focus{
+            color: @c_white;
+            background-color: mix(@c_white, @btn-color);
+            border-color: mix(@c_white, @btn-color);
+        }
+    }
+    &.is-plain,
+    &.is-plain:focus{
+        color: @btn-color;
+        background: mix(@c_white, @btn-color, 90%);
+        border-color: mix(@c_white, @btn-color, 60%);
+        &:hover{
+            background: @btn-color;
+            border-color: @btn-color;
+            color: @c_white;
+        }
+    }
+    &.is-plain.is-disabled {
+        &,
+        &:hover,
+        &:focus{
+            color: mix(@c_white, @btn-color, 40%);
+            background-color: mix(@c_white, @btn-color, 90%);
+            border-color: mix(@c_white, @btn-color, 80%);
+        }
+    }
+}
+
+// 按钮
+.el-button,
+.el-button:focus{
+    padding: 10px 22px;
+    border-radius: 8px;
+    color: @c_btn_font;
+    border-color: @c_btn_border;
+    background-color: @c_white;
+}
+.el-button:hover {
+    color: @c_main;
+    border-color: mix(@c_white, @c_main, 70%);
+    background-color: mix(@c_white, @c_main, 90%);
+    &.is-plain{
+        color: @c_main;
+        border-color: @c_main;
+    }
+}
+.el-button.is-disabled,
+.el-button.is-disabled:hover,
+.el-button.is-disabled:focus {
+    color: @c_btn_font_disabled;
+    border-color: @c_btn_border_disabled;
+    background-color: @c_white;
+}
+
+.el-button--primary{
+    .btn-color(@c_main);
+}
+.el-button--success{
+    .btn-color(@c_green);
+}
+.el-button--info{
+    .btn-color(@c_gray);
+}
+.el-button--warning{
+    .btn-color(@c_orange);
+}
+.el-button--danger{
+    .btn-color(@c_red);
+}
+
+.el-button--text,
+.el-button--text:focus{
+    padding-left: 0;
+    padding-right: 0;
+    color: @c_main;
+    background: transparent;
+    border-color: transparent;
+    &:hover{
+        color: mix(@c_white, @c_main, 20%);
+        background: transparent;
+        border-color: transparent;
+    }
+    &.is-disabled{
+        &,
+        &:focus,
+        &:hover{
+            border-color: transparent;
+            background: transparent;
+        }
+    }
+}
+
+// 输入框
+.el-input--small .el-input__inner,
+.el-range-editor--small.el-input__inner{
+    height: 36px;
+    line-height: 34px;
+}
+.el-input__inner{
+    border-radius: 8px;
+}
+.el-input-group__prepend {
+    border-radius: 8px 0 0 8px;
+}
+.el-input--small .el-input__icon{
+    line-height: 36px;
+}
+.el-date-editor .el-range-separator{
+    box-sizing: content-box;
+    line-height: 28px;
+}
+.el-textarea__inner{
+    border-radius: 8px;
+}
+input[type="number"]{
+    padding-right: 0;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button{
+        height: 34px;
+    }
+}
+// 复选框
+.el-checkbox__input.is-checked .el-checkbox__inner, 
+.el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: @c_main;
+    border-color: @c_main;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+    color: @c_main;
+}
+.el-checkbox__inner:hover{
+    border-color: @c_main;
+}
+// 单选框
+.el-radio__input.is-checked .el-radio__inner{
+    border-color: @c_main;
+    background: @c_main;
+}
+.el-radio__input.is-checked+.el-radio__label{
+    color: @c_main;
+}
+// 弹框
+.el-dialog__header {
+    position: relative;
+    padding: 15px 20px;
+    background: linear-gradient(to bottom, #fff, #F7F8FA);
+}
+.el-dialog__headerbtn {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.el-dialog__body{
+    background: #E8EBF0;
+}
+// 表格
+.el-table {
+    color: #666666;
+    thead th{
+        color: #1C1C28;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .el-button {
+        padding: 6px;
+    }
+}
+
+// 下拉框
+.el-dropdown-menu__item:focus, 
+.el-dropdown-menu__item:not(.is-disabled):hover{
+    color: @c_main;
+}
+
+//tab
+.el-tabs__item:hover,
+.el-tabs__item.is-active{
+    color: @c_main;
+}
+.el-tabs__active-bar{
+    background-color: @c_main;
+}

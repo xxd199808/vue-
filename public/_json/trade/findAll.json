@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": [
+    {
+        "id": "1",
+        "parentId": "0",
+        "tradeName": "领域1",
+        "deleteFlag": "0"
+    }]
+}

@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "daf122a5-6a29-449b-8109-9d4beba12254",
+		"name": "接口开通",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "接口开通列表",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "111",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8088/beaver/userRelate/search?curpage=1&percount=10&orgId=d0991719-6d66-4156-b5cc-a159ef144e17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"userRelate",
+						"search"
+					],
+					"query": [
+						{
+							"key": "curpage",
+							"value": "1"
+						},
+						{
+							"key": "percount",
+							"value": "10"
+						},
+						{
+							"key": "orgId",
+							"value": "d0991719-6d66-4156-b5cc-a159ef144e17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "接口开通：给机构批量分配API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\"apiId\":\"211b1b3a-b4c2-4356-a274-b46aedcb9946\",\"orgId\":\"d0991719-6d66-4156-b5cc-a159ef144e17\",\"columns\":\"mobile\"}\r\n]"
+				},
+				"url": {
+					"raw": "http://192.168.0.124:8088/beaver/userRelate/assignApiForOrg",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"124"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"userRelate",
+						"assignApiForOrg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "移除接口开通记录",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "34810fa9-58c9-461b-bc6f-337581af3e38",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.124:8088/beaver/userRelate/delete",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"124"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"userRelate",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "接口开通：数据权限",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "db8acdd6-7d80-468c-bade-8222a9d2c764",
+							"type": "text"
+						},
+						{
+							"key": "columns",
+							"value": "phone",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.124:8088/beaver/userRelate/authorize",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"124"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"userRelate",
+						"authorize"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

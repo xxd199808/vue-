@@ -1,0 +1,42 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": [
+        {
+            "id": "111",
+            "name": "服务中心",
+            "value": "1",
+            "orderNo": 1,
+            "dictCode": "ouType"
+        },
+        {
+            "id": "112",
+            "name": "业务机构",
+            "value": "2",
+            "orderNo": 2,
+            "dictCode": "ouType"
+        },
+        {
+            "id": "113",
+            "name": "窗口",
+            "value": "3",
+            "orderNo": 3,
+            "dictCode": "ouType"
+        },
+        {
+            "id": "114",
+            "name": "监察",
+            "value": "4",
+            "orderNo": 4,
+            "dictCode": "ouType"
+        },
+        {
+            "id": "115",
+            "name": "其他",
+            "value": "5",
+            "orderNo": 5,
+            "dictCode": "ouType"
+        }
+    ]
+}

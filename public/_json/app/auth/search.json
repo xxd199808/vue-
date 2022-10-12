@@ -1,0 +1,168 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "retlist": [
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        },
+        {
+            "id": "9969cfe3-a9e3-499b-8831-7e9d858a14f1",
+            "name": "接口名称",
+            "provider": "我是提供商",
+            "columns": null,
+            "resultsList": null,
+            "apiCategory": null,
+            "reqMethod": "POST",
+            "callAddress": "http://aaaaskdoasjd.com"
+        }]
+    }
+}

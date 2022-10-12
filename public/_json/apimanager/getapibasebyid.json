@@ -1,0 +1,16 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "7d5bdeac-e181-4843-aab6-19714804de35",
+        "name": "67",
+        "api_group_id": "6ee4d939-4ed5-4c7e-88e5-6c9c76858be3",
+        "auth_method": null,
+        "comment": "备注哈哈哈哈",
+        "logoNfmId": "11111",
+        "orgId": null,
+        "update_time": "2021-12-14 16:11:05",
+        "status": 1
+    }
+}

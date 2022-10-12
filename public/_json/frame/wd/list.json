@@ -1,0 +1,15 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": [
+        {
+            "day": "2022-4-19",
+            "type": 1
+        },
+        {
+            "day": "2022-4-21",
+            "type": 2
+        }
+    ]
+}

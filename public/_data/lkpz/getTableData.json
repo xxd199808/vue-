@@ -1,0 +1,22 @@
+{
+    "success": true,
+    "statusCode": 200,
+    "msg": "success",
+    "data": {
+        "totalcount": 86,
+        "totalPages": 43,
+        "pageNumber": 1,
+        "retlist": [
+        {
+            "yymc": "xxxx",
+            "ssjg": "公安局",
+            "yyzt": "正常",
+            "lkzt": "0"
+        }, {
+            "yymc": "xxxx",
+            "ssjg": "公安局",
+            "yyzt": "正常",
+            "lkzt": "1"
+        }]
+    }
+}

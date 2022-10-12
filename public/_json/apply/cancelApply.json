@@ -1,0 +1,6 @@
+{
+    "success": true,
+    "code": 500,
+    "msg": "该申请记录已审核通过，不允许取消",
+    "data": true
+}

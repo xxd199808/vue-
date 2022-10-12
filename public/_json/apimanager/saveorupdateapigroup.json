@@ -1,0 +1,13 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "ea92276b-e61d-43e4-8b2e-40e133886bea",
+        "name": "ABCD",
+        "base_path": "/AB",
+        "comment": "测试3",
+        "create_time": "2021-12-07 17:12:44",
+        "create_by": "superadmin1"
+    }
+}

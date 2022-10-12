@@ -1,0 +1,32 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "",
+    "data": {
+        "requestId": "94e801b6-28",
+        "appId": "QA_ADMIN_APP_ID",
+        "appName": "QA_ADMIN_APP",
+        "apiName": "test001",
+        "devId": "",
+        "devName": "SUPERADMIN",
+        "providerId": "edee9d63-1f75-4dba-a6c6-73447c30770e",
+        "providerName": "ga1",
+        "gateWayServerNode": "node001",
+        "requestIp": "172.16.16.139",
+        "requestApi": "/RhVHGdEd/test/apig/getToken",
+        "requestApiId": "06b2f0c4-c09c-44fc-9f7b-fae0289d7d7f",
+        "requestMethod": "POST",
+        "requestArrive": "2022-05-09 10:14:24.491",
+        "requestContent": null,
+        "originalRequestHeader": "{\"X-Forwarded-For\":\"172.16.16.139\",\"Host\":\"172.16.16.58\",\"X-Forwarded-Proto\":\"https\",\"X-Real-IP\":\"172.16.16.139\",\"Connection\":\"close\",\"Pragma\":\"no-cache\",\"Cache-Control\":\"no-cache\",\"Accept\":\"application/json, text/plain, */*\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39\",\"token\":\"bIL8LRiiFcVS2zgkBZlZA.hC2m1i71RYqHmT7lWrLTfg.qt0iVWHaoDsAC1fmpP2XTQ\",\"Content-Type\":\"application/json\",\"Origin\":\"http://172.16.16.58\",\"Referer\":\"http://172.16.16.58/apig/\",\"Accept-Encoding\":\"gzip, deflate\",\"Accept-Language\":\"zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6\",\"content-length\":\"2\"}",
+        "modifiedRequestHeader": "{\"X-Forwarded-For\":\"172.16.16.139\",\"Host\":\"172.16.16.58\",\"X-Forwarded-Proto\":\"https\",\"X-Real-IP\":\"172.16.16.139\",\"Connection\":\"close\",\"Pragma\":\"no-cache\",\"Cache-Control\":\"no-cache\",\"Accept\":\"application/json, text/plain, */*\",\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39\",\"token\":\"bIL8LRiiFcVS2zgkBZlZA.hC2m1i71RYqHmT7lWrLTfg.qt0iVWHaoDsAC1fmpP2XTQ\",\"Content-Type\":\"application/json\",\"Origin\":\"http://172.16.16.58\",\"Referer\":\"http://172.16.16.58/apig/\",\"Accept-Encoding\":\"gzip, deflate\",\"Accept-Language\":\"zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6\",\"content-length\":\"2\"}",
+        "originalRequestBody": "{}",
+        "modifiedRequestBody": null,
+        "routeTo": null,
+        "responseTime": "2022-05-09 10:14:24.496",
+        "responseCode": 200,
+        "responseContent": "{\"timestamp\":1652062464495,\"path\":\"/RhVHGdEd/test/apig/getToken\",\"status\":404,\"error\":\"Internal Server Error\",\"message\":\"您访问的api不存在或已下架！\",\"requestId\":\"94e801b6-28\"}",
+        "elapsedTime": 5,
+        "debug": true
+    }
+}

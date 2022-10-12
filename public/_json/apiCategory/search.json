@@ -1,0 +1,46 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "totalcount": 3,
+        "totalPages": null,
+        "percount": 10,
+        "curpage": 1,
+        "retlist": [
+        {
+            "id": "04620d70-f961-4735-8eaf-22d34fae5213",
+            "parentId": null,
+            "code": "ttt5t5",
+            "name": "文化",
+            "deleteFlag": "0",
+            "sort": 2,
+            "comment": "1",
+            "status": "0"
+        },
+        {
+            "id": "40a85b79-9781-448e-9abe-81ac13c3ee83",
+            "parentId": "0",
+            "code": "ttt5t5",
+            "name": "文化",
+            "deleteFlag": "0",
+            "sort": 2,
+            "comment": "1",
+            "status": "0"
+        },
+        {
+            "id": "f7e82379-0aa2-483a-8d91-7c22c6577330",
+            "parentId": "0",
+            "code": "52ded7e0",
+            "name": "交通",
+            "deleteFlag": "0",
+            "sort": 1,
+            "comment": "1",
+            "status": "0"
+        }],
+        "parentId": null,
+        "name": "",
+        "status": "0",
+        "pageNumber": 1
+    }
+}

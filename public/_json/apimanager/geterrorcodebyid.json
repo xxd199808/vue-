@@ -1,0 +1,13 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": [{
+        "id": "f5c48423-8656-4f89-863e-f55d03e3bf0e",
+        "errCode": "8002",
+        "errMsg": "服务维护中2",
+        "description": "测试错误码2",
+        "apiBaseId": "7d5bdeac-e181-4843-aab6-19714804de35",
+        "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17"
+    }]
+}

@@ -1,0 +1,20 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "9db989f8-2dfe-4763-94a9-8046ba19f5b8",
+        "api_base_id": "7d5bdeac-e181-4843-aab6-19714804de35",
+        "req_param_name": "67",
+        "req_param_position": "parameterPath",
+        "req_param_type": "String",
+        "req_param_notnull": true,
+        "req_param_default_val": "67",
+        "req_param_example": "67",
+        "req_param_comment": "67",
+        "serv_param_name": "673",
+        "serv_param_position": "parameterPath",
+        "paramType": "NORMAL",
+        "nameNotChanged": false
+    }
+}

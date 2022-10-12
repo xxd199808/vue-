@@ -1,0 +1,42 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "percount": 10,
+        "curpage": 1,
+        "totalcount": 10,
+        "retlist": [
+        {
+            "id": "904495e3-d113-4a61-8e60-0676babeb25a",
+            "name": "get_无参",
+            "provider": "提供者",
+            "resultsList": [
+            {
+                "id": "3",
+                "apiBaseId": "904495e3-d113-4a61-8e60-0676babeb25a",
+                "resultCode": "username",
+                "resultDesc": "用户名称"
+            },
+            {
+                "id": "4",
+                "apiBaseId": "904495e3-d113-4a61-8e60-0676babeb25a",
+                "resultCode": "mobile",
+                "resultDesc": "手机号"
+            },
+            {
+                "id": "5",
+                "apiBaseId": "904495e3-d113-4a61-8e60-0676babeb25a",
+                "resultCode": "certCode",
+                "resultDesc": "身份证"
+            },
+            {
+                "id": "6",
+                "apiBaseId": "904495e3-d113-4a61-8e60-0676babeb25a",
+                "resultCode": "sex",
+                "resultDesc": "性别"
+            }]
+        }]
+
+    }
+}

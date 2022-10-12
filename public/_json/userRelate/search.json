@@ -1,0 +1,68 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "totalcount": 3,
+        "totalPages": null,
+        "percount": 10,
+        "curpage": 1,
+        "retlist": [
+        {
+            "id": "00f250f5-f7f8-41d4-a89b-7754fdb81820",
+            "applyId": "6036a259-8bef-4e32-91d2-5a86bdb3768d",
+            "orgName": "机构1222",
+            "apiId": "0f057d57-af25-48c5-8200-38afb84e09b3",
+            "apiName": "69",
+            "logoNfmId": null,
+            "apiBasePath": "/",
+            "apiPath": "69",
+            "apiComment": null,
+            "authExpire": null,
+            "status": "1",
+            "columns": null,
+            "operator": "王2222",
+            "createdTime": "2022-04-15 13:32:57"
+        },
+        {
+            "id": "34810fa9-58c9-461b-bc6f-337581af3e38",
+            "applyId": null,
+            "orgName": "机构1222",
+            "apiId": "211b1b3a-b4c2-4356-a274-b46aedcb9946",
+            "apiName": "put_无参",
+            "logoNfmId": null,
+            "apiBasePath": "/zxtest",
+            "apiPath": "/hhh",
+            "apiComment": "put_无参",
+            "authExpire": null,
+            "status": "0",
+            "columns": null,
+            "operator": "王2222",
+            "createdTime": "2022-04-21 14:53:28"
+        },
+        {
+            "id": "db8acdd6-7d80-468c-bade-8222a9d2c764",
+            "applyId": null,
+            "orgName": "机构1222",
+            "apiId": "211b1b3a-b4c2-4356-a274-b46aedcb9946",
+            "apiName": "put_无参",
+            "logoNfmId": null,
+            "apiBasePath": "/zxtest",
+            "apiPath": "/hhh",
+            "apiComment": "put_无参",
+            "authExpire": null,
+            "status": "2",
+            "columns": "mobile",
+            "operator": "王2222",
+            "createdTime": "2022-04-21 14:56:32"
+        }],
+        "applyId": null,
+        "apiGroupId": null,
+        "apiName": null,
+        "beginDate": null,
+        "endDate": null,
+        "auditState": null,
+        "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17",
+        "pageNumber": 1
+    }
+}

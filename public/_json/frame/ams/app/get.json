@@ -1,0 +1,16 @@
+{
+    "success": true,
+    "code": 200,
+    "message": "success",
+    "data": {
+        "id": "fd4cce7f32d54d39a55b93734e1c514a",
+        "code": "SYS-MENU",
+        "name": "菜单管理666",
+        "type": "menu",
+        "menuType": "frame",
+        "router": "menu",
+        "icon": "",
+        "orderNo": 1,
+        "parentId": "dea9af97f9814ac998a2c9a15900927c"
+    }
+}

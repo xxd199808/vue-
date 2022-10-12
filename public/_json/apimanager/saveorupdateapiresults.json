@@ -1,0 +1,11 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "cc78c034-09ab-4ac4-a2ee-84b717f1882a",
+        "apiBaseId": "7d5bdeac-e181-4843-aab6-19714804de35",
+        "resultCode": "name",
+        "resultDesc": "属性值"
+    }
+}

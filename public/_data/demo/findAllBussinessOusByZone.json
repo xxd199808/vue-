@@ -1,0 +1,601 @@
+{
+    "success": true,
+    "msg": null,
+    "data": {
+        "personid": "408aeee05750f3a8015750f6c08a0001",
+        "zoneList": [
+            {
+                "code": "080000",
+                "name": "无锡市"
+            },
+            {
+                "code": "080001",
+                "name": "江阴市"
+            },
+            {
+                "code": "080002",
+                "name": "宜兴市"
+            }
+        ],
+        "oulist": [
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013381624cba006b",
+                "orgshortname": "市安监局",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "1",
+                "orgshortname": "市安监局1",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "2",
+                "orgshortname": "市安监局2",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "3",
+                "orgshortname": "市安监局3",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "4",
+                "orgshortname": "市安监局4",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "5",
+                "orgshortname": "市安监局5",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "6",
+                "orgshortname": "市安监局6",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "7",
+                "orgshortname": "市安监局7",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "8",
+                "orgshortname": "市安监局8",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "9",
+                "orgshortname": "市安监局9",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "10",
+                "orgshortname": "市安监局10",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133838aa11719ba",
+                "orgshortname": "市城管局",
+                "org": "CG"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e9338c923501338c9710f6000c",
+                "orgshortname": "市地税局",
+                "org": "DS"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013383479f381557",
+                "orgshortname": "市地震局",
+                "org": "DZ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133815c7e560054",
+                "orgshortname": "市发改委",
+                "org": "FG"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133819c02f502b8",
+                "orgshortname": "市国土局",
+                "org": "GT"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881eb338d839101338dcdbec604ba",
+                "orgshortname": "市工商局",
+                "org": "GS"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e9338c923501338c9ae5fb002e",
+                "orgshortname": "市国税局",
+                "org": "GW"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73386ba3a01338748e30e0437",
+                "orgshortname": "市规划局",
+                "org": "GH"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013382ce32900e4c",
+                "orgshortname": "市公安局",
+                "org": "GA"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133834700a6154b",
+                "orgshortname": "市环保局",
+                "org": "HB"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133829da3d60ad6",
+                "orgshortname": "市交通运输局",
+                "org": "JT"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133816457ad007c",
+                "orgshortname": "市经信委",
+                "org": "JX"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133833f5b5014fc",
+                "orgshortname": "市教育局",
+                "org": "JY"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133834655431544",
+                "orgshortname": "市科技局",
+                "org": "KJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e9338c923501338ca5434d00b4",
+                "orgshortname": "市粮食局",
+                "org": "LS"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013381b18c7203b6",
+                "orgshortname": "市农委",
+                "org": "NW"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e533a12ccb0133a130d94f000a",
+                "orgshortname": "市农机局",
+                "org": "NJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be5001338348bd5a1567",
+                "orgshortname": "市旅游局",
+                "org": "LU"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133815e6efb005e",
+                "orgshortname": "市民宗局",
+                "org": "MW"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be5001338290f6c80a72",
+                "orgshortname": "市民政局",
+                "org": "MZ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e7338609f701338632aa52026e",
+                "orgshortname": "市民防局",
+                "org": "MF"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133818e03b4026d",
+                "orgshortname": "市气象局",
+                "org": "QX"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013383792a6318a0",
+                "orgshortname": "市人社局",
+                "org": "RB"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013383118a3f12c2",
+                "orgshortname": "市司法局",
+                "org": "SF"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013381947398028a",
+                "orgshortname": "市水利局",
+                "org": "SL"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e9338c923501338ca8e6b200d6",
+                "orgshortname": "市商务局",
+                "org": "SW"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133834863821562",
+                "orgshortname": "市体育局",
+                "org": "TY"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013381826a0a0210",
+                "orgshortname": "市外侨办",
+                "org": "WQ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013381eacf900764",
+                "orgshortname": "市物价局",
+                "org": "WJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be5001338342bd19151d",
+                "orgshortname": "市卫计委",
+                "org": "WS"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133834b40f81592",
+                "orgshortname": "市文广新局",
+                "org": "WG"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133830042d9114c",
+                "orgshortname": "市消防支队",
+                "org": "XF"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881eb338d839101338de72a870587",
+                "orgshortname": "市烟草局",
+                "org": "YC"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be5001338348fd32156c",
+                "orgshortname": "市药监局",
+                "org": "YJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73386ba3a013386d4425d00b0",
+                "orgshortname": "市住建局",
+                "org": "ZF"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be5001338162bf69006f",
+                "orgshortname": "市质监局",
+                "org": "ZJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e533a01eea0133a127e3da0074",
+                "orgshortname": "市住房公积金中心",
+                "org": "GJ"
+            }
+        ],
+        "sortlist": [
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013381624cba006b",
+                "orgshortname": "市安监局",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "1",
+                "orgshortname": "市安监局1",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "2",
+                "orgshortname": "市安监局2",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "3",
+                "orgshortname": "市安监局3",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "4",
+                "orgshortname": "市安监局4",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "5",
+                "orgshortname": "市安监局5",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "6",
+                "orgshortname": "市安监局6",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "7",
+                "orgshortname": "市安监局7",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "8",
+                "orgshortname": "市安监局8",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "9",
+                "orgshortname": "市安监局9",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "10",
+                "orgshortname": "市安监局10",
+                "org": "AJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133838aa11719ba",
+                "orgshortname": "市城管局",
+                "org": "CG"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e9338c923501338c9710f6000c",
+                "orgshortname": "市地税局",
+                "org": "DS"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013383479f381557",
+                "orgshortname": "市地震局",
+                "org": "DZ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133815c7e560054",
+                "orgshortname": "市发改委",
+                "org": "FG"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013382ce32900e4c",
+                "orgshortname": "市公安局",
+                "org": "GA"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73386ba3a01338748e30e0437",
+                "orgshortname": "市规划局",
+                "org": "GH"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e533a01eea0133a127e3da0074",
+                "orgshortname": "市住房公积金中心",
+                "org": "GJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881eb338d839101338dcdbec604ba",
+                "orgshortname": "市工商局",
+                "org": "GS"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133819c02f502b8",
+                "orgshortname": "市国土局",
+                "org": "GT"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e9338c923501338c9ae5fb002e",
+                "orgshortname": "市国税局",
+                "org": "GW"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133834700a6154b",
+                "orgshortname": "市环保局",
+                "org": "HB"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133829da3d60ad6",
+                "orgshortname": "市交通运输局",
+                "org": "JT"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133816457ad007c",
+                "orgshortname": "市经信委",
+                "org": "JX"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133833f5b5014fc",
+                "orgshortname": "市教育局",
+                "org": "JY"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133834655431544",
+                "orgshortname": "市科技局",
+                "org": "KJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e9338c923501338ca5434d00b4",
+                "orgshortname": "市粮食局",
+                "org": "LS"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be5001338348bd5a1567",
+                "orgshortname": "市旅游局",
+                "org": "LU"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e7338609f701338632aa52026e",
+                "orgshortname": "市民防局",
+                "org": "MF"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133815e6efb005e",
+                "orgshortname": "市民宗局",
+                "org": "MW"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be5001338290f6c80a72",
+                "orgshortname": "市民政局",
+                "org": "MZ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e533a12ccb0133a130d94f000a",
+                "orgshortname": "市农机局",
+                "org": "NJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013381b18c7203b6",
+                "orgshortname": "市农委",
+                "org": "NW"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133818e03b4026d",
+                "orgshortname": "市气象局",
+                "org": "QX"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013383792a6318a0",
+                "orgshortname": "市人社局",
+                "org": "RB"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013383118a3f12c2",
+                "orgshortname": "市司法局",
+                "org": "SF"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013381947398028a",
+                "orgshortname": "市水利局",
+                "org": "SL"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e9338c923501338ca8e6b200d6",
+                "orgshortname": "市商务局",
+                "org": "SW"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133834863821562",
+                "orgshortname": "市体育局",
+                "org": "TY"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133834b40f81592",
+                "orgshortname": "市文广新局",
+                "org": "WG"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013381eacf900764",
+                "orgshortname": "市物价局",
+                "org": "WJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be50013381826a0a0210",
+                "orgshortname": "市外侨办",
+                "org": "WQ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be5001338342bd19151d",
+                "orgshortname": "市卫计委",
+                "org": "WS"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be500133830042d9114c",
+                "orgshortname": "市消防支队",
+                "org": "XF"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881eb338d839101338de72a870587",
+                "orgshortname": "市烟草局",
+                "org": "YC"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be5001338348fd32156c",
+                "orgshortname": "市药监局",
+                "org": "YJ"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73386ba3a013386d4425d00b0",
+                "orgshortname": "市住建局",
+                "org": "ZF"
+            },
+            {
+                "idareaCode": "080000",
+                "idorg": "402881e73380be5001338162bf69006f",
+                "orgshortname": "市质监局",
+                "org": "ZJ"
+            }
+        ]
+    }
+}

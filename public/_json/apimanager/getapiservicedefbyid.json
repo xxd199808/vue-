@@ -1,0 +1,13 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "acd51756-34d3-42a5-8b61-a2067fc98856",
+        "api_base_id": "7d5bdeac-e181-4843-aab6-19714804de35",
+        "service_url": "http://192.168.1.66:8889",
+        "service_path": "/67test",
+        "service_method": "POST",
+        "service_expire": 67
+    }
+}

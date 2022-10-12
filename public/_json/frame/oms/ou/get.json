@@ -1,0 +1,14 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": {
+        "id": "24ab3cf02afa46a7ba109dab8e6c6edf",
+        "code": "jg002",
+        "name": "testjg",
+        "type": 1,
+        "parentId": "65687a6ffe3943958087fba8f3795a43",
+        "ouId": "24ab3cf02afa46a7ba109dab8e6c6edf",
+        "zoneId": "65687a6ffe3943958087fba8f3795a43"
+    }
+}

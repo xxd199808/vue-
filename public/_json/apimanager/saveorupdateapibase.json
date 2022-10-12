@@ -1,0 +1,16 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "8dadec17-5b0f-420c-90ee-66f1d7db5af0",
+        "name": "zyb测试API",
+        "api_group_id": "6ee4d939-4ed5-4c7e-88e5-6c9c76858be3",
+        "auth_method": "access_token",
+        "comment": null,
+        "logoNfmId": null,
+        "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17",
+        "update_time": "2021-12-14 16:11:44",
+        "status": 0
+    }
+}

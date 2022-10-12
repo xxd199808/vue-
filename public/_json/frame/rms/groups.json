@@ -1,0 +1,18 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": [{
+        "id": "1",
+        "name": "报表分组1",
+        "value": "a",
+        "orderNo": 1,
+        "dictCode": "reportType"
+    }, {
+        "id": "2",
+        "name": "报表分组2",
+        "value": "b",
+        "orderNo": 2,
+        "dictCode": "reportType"
+    }]
+}

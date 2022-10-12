@@ -1,0 +1,18 @@
+{
+    "success": true,
+    "statusCode": 200,
+    "msg": "success",
+    "data": {
+        "totalcount": 86,
+        "totalPages": 43,
+        "pageNumber": 1,
+        "retlist": [
+        {
+            "jrjgmc": "民政局",
+            "lxr": "张三",
+            "lxdh": "123213478124",
+            "zt": "待审核",
+            "cjrq": "2022-04-12"
+        }]
+    }
+}

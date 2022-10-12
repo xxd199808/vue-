@@ -1,0 +1,22 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": [
+    {
+        "id": "ccd28146e64e457c9fb8f742f9b9bccc",
+        "name": "金鱼的服务",
+        "api_group_id": "4c8ad59c1e244fd080449083304f2a95",
+        "apiCategory": "111",
+        "auth_method": "access_token",
+        "comment": "金鱼",
+        "logoNfmId": "b43a9a6f8dae494fb2027bb565ba0d36",
+        "orgId": "baa30c425165482fa96422fe38cbb1a0",
+        "callAddress": null,
+        "update_time": "2022-05-05 16:53:16",
+        "status": 2,
+        "apiGroupName": null,
+        "requestMethod": null,
+        "envType": 1
+    }]
+}

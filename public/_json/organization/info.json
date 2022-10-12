@@ -1,0 +1,44 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "operator": null,
+        "organizationInfo": {
+            "id": "d0991719-6d66-4156-b5cc-a159ef144e17",
+            "registerType": "2",
+            "parentCode": null,
+            "orgCode": "2",
+            "orgName": "机构1222",
+            "contacts": "zhangsan22",
+            "contactPhone": "2222222222222",
+            "registerRemark": "2222",
+            "createdTime": "2022-04-13 19:48:24",
+            "updatedTime": "2022-04-22 09:18:46",
+            "createdBy": null,
+            "updatedBy": "62913afc-995a-4813-88ae-5070187cd317",
+            "deleteFlag": "0",
+            "auditState": "1",
+            "auditRemark": "12",
+            "auditUser": null,
+            "auditTime": "2022-04-22 09:18:09",
+            "status": "1",
+            "routeCode": "aaaaaaa"
+        },
+        "admin": {
+            "id": "62913afc-995a-4813-88ae-5070187cd317",
+            "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17",
+            "role": "0",
+            "name": "王2222",
+            "account": "account2222@qq.com",
+            "password": "$2a$10$AdGaPcL8QSOJMRXNWiihcOs1aaWXobr4KF5r6yJcJsubn9XqQIMu.",
+            "createdTime": "2022-04-13 19:48:24",
+            "updatedTime": null,
+            "createdBy": null,
+            "updatedBy": null,
+            "deleteFlag": "0",
+            "registerType": "2",
+            "status": null
+        }
+    }
+}

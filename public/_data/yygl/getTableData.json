@@ -1,0 +1,19 @@
+{
+    "success": true,
+    "statusCode": 200,
+    "msg": "success",
+    "data": {
+        "totalcount": 86,
+        "totalPages": 43,
+        "pageNumber": 1,
+        "retlist": [
+        {
+            "yyid": "2325235",
+            "yymc": "xxxx",
+            "ssjg": "公安局",
+            "yyzt": "已启用",
+            "cjr": "张三",
+            "cjsj": "2022-04-12 12:45:08"
+        }]
+    }
+}

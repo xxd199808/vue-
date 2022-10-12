@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "8b5c6d17-346a-4c37-b35f-1b961a45641c",
+		"name": "服务分类",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "保存",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"code\": \"52ded7e0\",\r\n        \"name\": \"交通\",\r\n        \"sort\": 1,\r\n        \"comment\": 1\r\n    }"
+				},
+				"url": {
+					"raw": "http://192.168.0.124:8088/beaver/apiCategory/save",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"124"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"apiCategory",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询全部",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://192.168.0.124:8088/beaver/apiCategory/findAll",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"124"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"apiCategory",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "启用禁用",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "f7e82379-0aa2-483a-8d91-7c22c6577330",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.124:8088/beaver/apiCategory/changeStatus",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"124"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"apiCategory",
+						"changeStatus"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

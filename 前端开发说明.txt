@@ -1,0 +1,94 @@
+【打包发布】
+第一次打包后，svn\[.......]front\[sPrjName]\，并通知后端修改 config 中的配置文件。
+以后的更新，打包完成后，只需提交 svn\[.......]dist\front\[sPrjName]\ 中 index.html 和 r/
+
+
+【前后端联调】-本地修改不要提交
+完成对接的数据，必须将模拟的数据文件根据后端提供的路径放到 _json/ 中
+1 vue.config.js 修改 sHtServer 的值：
+    const sHtServer = 'http://server:8080/[后端工程名]/';
+2 src\utils\config.js 修改 BPROD：
+    const BPROD = true;
+3 重启 vue-cli 服务
+--------------
+地址关系说明：
+接口文档中的地址：command/aqiCalendar
+urls 中定义的地址：SERVER_API + 'command/aqiCalendar'
+ => BPROD = false 时，请求时将访问的前端资源：public/_json/command/aqiCalendar.json（$WIV.fRequest 会自动补充或修改后缀为 json）
+ => BPROD = true 时，浏览器调试中的 network 拦截地址显示为：http://localhost:8080/[后端工程名]/command/aqiCalendar.json
+ => BPROD = true 时，实际访问路径将被解析为：http://192.168.1.137:8080/ibshsyq/command/aqiCalendar.json
+
+【开发须知】
+1 本项目安装依赖时，需切换到公司内网资源库
+npm config set registry http://192.10.110.10/repository/npm-public/
+
+【更新 hamigua】
+1 执行 npm install hamigua@x.x.x
+2 同步 hamigua 中的数据：public/_json/frame（来源：Git\gongsichanpin\hamigua\hamigua_f\hamigua\public\_json）
+
+--------------------
+--------------------
+--------------------
+【创建项目】
+》》修改“前端开发说明.txt”中的 [sPrjName]、[后端工程名]
+
+》》package.json
+1 参考 package_log.txt 修改版本号，移除项目未使用的资源
+2 移除 package_log.txt
+3 确定 hamigua 使用的版本，并修改 package.json 中的配置（查看版本：npm view hamigua version）
+4 执行 npm i 后，提交 package-lock.json，以保证开发人员的开发环境始终统一
+5 修改 name，为避免影响打包，请不要包含大写字母
+  - 规则说明："^(?:@[a-z0-9-*~][a-z0-9-*._~]*/)?[a-z0-9-~][a-z0-9-._~]*$"
+
+》》vue.config.js
+1 修改 sPrjTitle 为首页 <title></title> 的文字
+
+》》全局替换
+排除（files to exclude）：前端开发说明.txt
+1 vuePrj_ht ->[后端工程名]（说明：为了支持通过代理服务与后端联调时，正常的获取用户信息）
+2 vuePrj -> [sPrjName]
+
+》》front
+1 若父级目录未包含 front/，则将此目录移动到父级目录。若已包含，则删除当前工程中的 front/
+2 修改 父级目录/front/更新须知.md
+
+》》更新组件库 src/utils/wiv/
+  来源：Git\front\frame\wivPro\lib\wiv
+
+》》文件修改
+1 确认是否需要修改 src\utils\config.js 中的 oConfigUrl 地址配置
+2 框架资源中提供了比较完整的 demo 实例，开发项目中，根据实际需求应进行删减
+
+》》框架：hamigua
+1 若使用 hamigua 中的登录，则需要移除 src/router.js 中 login 相关内容
+  - 若使用其他方式登录，请修改 src\utils\project\user.js 中的 fGoLogin
+2 同步 hamigua 中的 json：public/_json/frame
+  - 不要覆盖菜单数据：frame\ams\appAndAuthTree.json（仅将 hamigua 中的菜单放到“SYS 系统管理”中）
+  - 来源：Git\gongsichanpin\hamigua\hamigua_f\hamigua\public\_json
+3 菜单数据 public\_json\frame\ams\appAndAuthTree.json
+  - 修改"项目页面"及其子菜单
+  - 根据需要修改 src\views\index\index.vue 中的菜单过滤方法 fMenuFilter
+
+》》添加忽略（仅SVN管理的项目需要执行）
+打包创建工程后，右击 dist/ 目录，添加到忽略列表，并将此配置提交SVN。注意，不要把 dist/ 目录提交到 SVN
+
+》》支持 Review Board（Git 项目）
+本地仓库目录（即包含 .git 的目录）若已包含文件 “.reviewboardrc”，则跳过此节。
+  需要先完成一次推送后，在本地仓库目录执行以下操作：
+  1 执行命令：rbt setup-repo
+  2 输入：192.10.110.23
+  3 输入数字选择项目（如果没有匹配的项目，就随便选）
+  4 yes
+  完成后，会生成内容如下的文件 “.reviewboardrc”（由于编码为 gb2312，因此查看及编辑请用记事本）
+  若第 3 步没有找到匹配的项目，在 Review Board 上查找项目名后，替换文件中的 REPOSITORY。
+  若 Review Board 中没有找到匹配的项目，请联系管理员。
+    --------------------------------------
+    REVIEWBOARD_URL = "192.10.110.23"
+    REPOSITORY = "front_frame(前端资源库框架)"
+    REPOSITORY_TYPE = "git"
+    BRANCH = "master"
+    LAND_DEST_BRANCH = "master"
+    --------------------------------------
+
+》》删除“前端开发说明.txt”中的【创建项目】段落
+

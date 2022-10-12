@@ -1,0 +1,21 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": [
+    {
+        "id": "5c13bc13-0719-4c69-9bfa-10055bbdd8cb",
+        "api_base_id": "7d5bdeac-e181-4843-aab6-19714804de35",
+        "req_param_name": "测试常量参数",
+        "req_param_position": "path",
+        "req_param_type": "String",
+        "req_param_notnull": true,
+        "req_param_default_val": "67",
+        "req_param_example": "67",
+        "req_param_comment": "67",
+        "serv_param_name": "673",
+        "serv_param_position": "path",
+        "paramType": "CONSTANT",
+        "nameNotChanged": false
+    }]
+}

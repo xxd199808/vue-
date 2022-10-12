@@ -1,0 +1,25 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "totalcount": 1,
+        "totalPages": null,
+        "percount": 10,
+        "curpage": 1,
+        "retlist": [
+        {
+            "id": "935650df-e3f0-470b-aaf3-f7ecbcec888a",
+            "strategyType": "1",
+            "strategyName": "策略rrr",
+            "strategyComment": "rrrr",
+            "strategyIpList": null,
+            "createdTime": null,
+            "updatedTime": "2022-04-27 13:10:29",
+            "createdBy": null,
+            "updatedBy": "1",
+            "deleteFlag": "0"
+        }],
+        "pageNumber": 1
+    }
+}

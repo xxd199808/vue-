@@ -1,0 +1,403 @@
+{
+    "success": true,
+    "code": 200,
+    "message": "success",
+    "data": [
+    {
+        "id": "demo",
+        "code": "DEMO",
+        "name": "DEMO",
+        "type": "group",
+        "icon": "el-icon-folder",
+        "orderNo": 0,
+        "parentId": "#",
+        "enable": true,
+        "children": [
+        {
+            "id": "demo-class",
+            "code": "DEMO-CLASS",
+            "name": "公共样式",
+            "type": "menu",
+            "menuType": "project",
+            "router": "demo/class.vue",
+            "icon": "el-icon-menu",
+            "parentId": "demo",
+            "enable": true
+        },
+        {
+            "id": "demo-form",
+            "code": "DEMO-FORM",
+            "name": "表单",
+            "type": "menu",
+            "menuType": "project",
+            "router": "demo/form.vue",
+            "icon": "el-icon-menu",
+            "orderNo": 10,
+            "parentId": "demo",
+            "enable": true,
+            "children": []
+        },
+        {
+            "id": "demo-dept",
+            "code": "DEMO-DEPT",
+            "name": "部门选择",
+            "type": "menu",
+            "menuType": "project",
+            "router": "demo/dept.vue",
+            "icon": "el-icon-menu",
+            "orderNo": 10,
+            "parentId": "demo",
+            "enable": true,
+            "children": []
+        },
+        {
+            "id": "demo-canvas",
+            "code": "DEMO-CANVAS",
+            "name": "流程配置",
+            "type": "menu",
+            "menuType": "project",
+            "router": "demo/canvas.vue",
+            "icon": "el-icon-menu",
+            "orderNo": 10,
+            "parentId": "demo",
+            "enable": true,
+            "children": []
+        },
+        {
+            "id": "demo-edittable",
+            "code": "DEMO-EDITTABLE",
+            "name": "可编辑表格",
+            "type": "menu",
+            "menuType": "project",
+            "router": "demo/edittable.vue",
+            "icon": "el-icon-menu",
+            "orderNo": 10,
+            "parentId": "demo",
+            "enable": true,
+            "children": []
+        },
+        {
+            "id": "demo-transfer",
+            "code": "DEMO-TRANSFER",
+            "name": "穿梭框",
+            "type": "menu",
+            "menuType": "project",
+            "router": "demo/transfer.vue",
+            "icon": "el-icon-menu",
+            "orderNo": 10,
+            "parentId": "demo",
+            "enable": true,
+            "children": []
+        }]
+    },
+    {
+        "id": "1",
+        "code": "PRJ",
+        "name": "项目页面",
+        "type": "group",
+        "icon": "el-icon-folder",
+        "orderNo": 0,
+        "parentId": "#",
+        "enable": true,
+        "children": [
+        {
+            "name": "服务管理",
+            "code": "fwgl",
+            "type": "group",
+            "enable": true,
+            "children": [
+            {
+                "code": "fwgl-fwgl",
+                "name": "服务管理",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/fwgl.vue",
+                "enable": true,
+                "children": []
+            },
+            {
+                "code": "fwgl-fwsh",
+                "name": "服务审核",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/fwsh.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "fwgl-fwdytj",
+                "name": "服务调用统计",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/fwdytj.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "fwgl-fwdzwh",
+                "name": "服务地址维护",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/fwdzwh.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "fwgl-fwcx",
+                "name": "服务查询",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/fwcx.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "fwgl-fwsq",
+                "name": "服务申请",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/fwsq.vue",
+                "enable": true,
+                "children": []
+            },
+            {
+                "code": "fwgl-fwsqjl",
+                "name": "服务申请记录",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/fwsqjl.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "fwgl-cwmgl",
+                "name": "错误码管理",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/cwmgl.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "fwgl-lkpz",
+                "name": "流控配置",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/lkpz.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "fwgl-fwgzpz",
+                "name": "访问规则配置",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/fwgzpz.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "fwgl-dyltj",
+                "name": "调用量统计",
+                "type": "menu",
+                "menuType": "project",
+                "router": "fwgl/dyltj.vue",
+                "enable": true,
+                "children": []
+            }]
+        }, {
+            "name": "组织管理",
+            "code": "zzgl",
+            "type": "group",
+            "enable": true,
+            "children": [
+            {
+                "code": "zzgl-jrjggl",
+                "name": "接入机构管理",
+                "type": "menu",
+                "menuType": "project",
+                "router": "zzgl/jrjggl.vue",
+                "enable": true,
+                "children": []
+            }]
+        }, {
+            "name": "应用管理",
+            "code": "yygl",
+            "type": "group",
+            "enable": true,
+            "children": [
+            {
+                "code": "yygl-yygl",
+                "name": "应用管理",
+                "type": "menu",
+                "menuType": "project",
+                "router": "yygl/yygl.vue",
+                "enable": true,
+                "children": []
+            },
+            {
+                "code": "yygl-jkktsh",
+                "name": "接口开通审核",
+                "type": "menu",
+                "menuType": "project",
+                "router": "yygl/jkktsh.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "yygl-jkktgl",
+                "name": "接口开通管理",
+                "type": "menu",
+                "menuType": "project",
+                "router": "yygl/jkktgl.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "yygl-jkflgl",
+                "name": "接口分类管理",
+                "type": "menu",
+                "menuType": "project",
+                "router": "yygl/jkflgl.vue",
+                "enable": true,
+                "children": []
+            }]
+        }, {
+            "name": "在线测试",
+            "code": "zxcs",
+            "type": "group",
+            "enable": true,
+            "children": [
+            {
+                "code": "zxcs-zxcs",
+                "name": "在线测试",
+                "type": "menu",
+                "menuType": "project",
+                "router": "zxcs/zxcs.vue",
+                "enable": true,
+                "children": []
+            }]
+        }, {
+            "name": "运行测试",
+            "code": "yxcs",
+            "type": "group",
+            "enable": true,
+            "children": [
+            {
+                "code": "yxcs-rzpz",
+                "name": "日志配置",
+                "type": "menu",
+                "menuType": "project",
+                "router": "yxcs/rzpz.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "yxcs-ssjk",
+                "name": "实时监控",
+                "type": "menu",
+                "menuType": "project",
+                "router": "yxcs/ssjk.vue",
+                "enable": true,
+                "children": []
+            }]
+        }, {
+            "name": "日志查询",
+            "code": "rzcx",
+            "type": "group",
+            "enable": true,
+            "children": [
+            {
+                "code": "rzcx-rzcx",
+                "name": "日志查询",
+                "type": "menu",
+                "menuType": "project",
+                "router": "rzcx/rzcx.vue",
+                "enable": true,
+                "children": []
+            }]
+        }, {
+            "name": "机构人员管理",
+            "code": "jgrygl",
+            "type": "group",
+            "enable": true,
+            "children": [
+            {
+                "code": "jgrygl-jgrygl_tgz",
+                "name": "机构人员管理",
+                "type": "menu",
+                "menuType": "project",
+                "router": "jgrygl/jgrygl_tgz.vue",
+                "enable": true,
+                "children": []
+            }, {
+                "code": "jgrygl-jgrygl_syz",
+                "name": "机构人员管理",
+                "type": "menu",
+                "menuType": "project",
+                "router": "jgrygl/jgrygl_syz.vue",
+                "enable": true,
+                "children": []
+            }]
+        }]
+    },
+    {
+        "id": "dea9af97f9814ac998a2c9a15900927c",
+        "code": "SYS",
+        "name": "系统管理",
+        "type": "group",
+        "menuType": "project",
+        "router": "",
+        "icon": "el-icon-folder",
+        "orderNo": 0,
+        "parentId": "#",
+        "enable": true,
+        "children": [
+        {
+            "id": "ae5d7bddfbb54ef8b966a2fde0f76581",
+            "code": "SYS-ZONE",
+            "name": "区划管理",
+            "type": "menu",
+            "menuType": "frame",
+            "router": "zone",
+            "icon": "el-icon-menu",
+            "orderNo": 1,
+            "parentId": "dea9af97f9814ac998a2c9a15900927c",
+            "enable": true,
+            "children": []
+        },
+        {
+            "id": "af2e8ac345bc4c29b1c233d91c3ba8a2",
+            "code": "SYS-PERSON",
+            "name": "机构人员管理",
+            "type": "menu",
+            "menuType": "frame",
+            "router": "person",
+            "icon": "el-icon-menu",
+            "orderNo": 2,
+            "parentId": "dea9af97f9814ac998a2c9a15900927c",
+            "enable": true,
+            "children": []
+        },
+        {
+            "id": "da05a6517e944320af436b1c9feb03cf",
+            "code": "SYS-ROLE",
+            "name": "角色维护",
+            "type": "menu",
+            "menuType": "frame",
+            "router": "role",
+            "icon": "el-icon-menu",
+            "orderNo": 3,
+            "parentId": "dea9af97f9814ac998a2c9a15900927c",
+            "enable": true,
+            "children": []
+        },
+        {
+            "id": "fd4cce7f32d54d39a55b93734e1c514a",
+            "code": "SYS-MENU",
+            "name": "菜单管理",
+            "type": "menu",
+            "menuType": "frame",
+            "router": "menu",
+            "icon": "el-icon-menu",
+            "orderNo": 8,
+            "parentId": "dea9af97f9814ac998a2c9a15900927c",
+            "enable": true,
+            "auths": [
+            {
+                "code": "hhhh",
+                "name": "66666"
+            }],
+            "children": []
+        }]
+    }]
+}

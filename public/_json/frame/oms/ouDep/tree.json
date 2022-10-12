@@ -1,0 +1,38 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": [
+    {
+        "code": "jg002",
+        "children": [],
+        "name": "testjg",
+        "id": "24ab3cf02afa46a7ba109dab8e6c6edf",
+        "type": 1,
+        "parentId": "65687a6ffe3943958087fba8f3795a43"
+    },
+    {
+        "code": "11",
+        "children": [
+        {
+            "code": "666",
+            "children": [],
+            "name": "testbm",
+            "id": "dcfb6f179b5e4f0c87d1c2c20e457789",
+            "type": 2,
+            "parentId": "84f5d088ab4d45168fc1b8f6dcc73c13"
+        },
+        {
+            "code": "222",
+            "children": [],
+            "name": "333",
+            "id": "a6ff60615f6e4ac7979cde9b9834fd45",
+            "type": 2,
+            "parentId": "84f5d088ab4d45168fc1b8f6dcc73c13"
+        }],
+        "name": "测试机构111",
+        "id": "84f5d088ab4d45168fc1b8f6dcc73c13",
+        "type": 1,
+        "parentId": "65687a6ffe3943958087fba8f3795a43"
+    }]
+}

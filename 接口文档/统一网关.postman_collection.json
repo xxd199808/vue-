@@ -1,0 +1,1160 @@
+{
+	"info": {
+		"_postman_id": "bb98477a-9653-4283-8252-73d234ba90a2",
+		"name": "统一网关",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "机构管理",
+			"item": [
+				{
+					"name": "保存机构",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"organizationInfo\": {\r\n        \"registerType\": \"2\",\r\n        \"orgCode\": \"2\",\r\n        \"orgName\": \"机构1222\",\r\n        \"contacts\": \"zhangsan22\",\r\n        \"contactPhone\": \"2222222222222\",\r\n        \"registerRemark\": \"2222\"\r\n    },\r\n    \"admin\": {\r\n        \"name\": \"王2222\",\r\n        \"account\": \"account2222@qq.com\",\r\n        \"password\": \"222222\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/organization/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "分页查询机构",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/organization/search?pageNum=1&pageSize=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"search"
+							],
+							"query": [
+								{
+									"key": "pageNum",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除机构",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"organizationInfo\": {\r\n        \"registerType\": \"1\",\r\n        \"orgCode\": \"1\",\r\n        \"orgName\": \"机构1\",\r\n        \"contacts\": \"zhangsan\",\r\n        \"contactPhone\": \"12333323232\",\r\n        \"registerRemark\": \"\"\r\n    },\r\n    \"admin\": {\r\n        \"name\": \"王\",\r\n        \"account\": \"account@qq.com\",\r\n        \"password\": \"111111111\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/organization/delete/01b7eb91-d827-439a-aa55-bdd1c39a3e86",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"delete",
+								"01b7eb91-d827-439a-aa55-bdd1c39a3e86"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "根据机构ID获取机构详情",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"organizationInfo\": {\r\n        \"registerType\": \"1\",\r\n        \"orgCode\": \"1\",\r\n        \"orgName\": \"机构1\",\r\n        \"contacts\": \"zhangsan\",\r\n        \"contactPhone\": \"12333323232\",\r\n        \"registerRemark\": \"\"\r\n    },\r\n    \"admin\": {\r\n        \"name\": \"王\",\r\n        \"account\": \"account@qq.com\",\r\n        \"password\": \"111111111\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/organization/info/d0991719-6d66-4156-b5cc-a159ef144e17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"info",
+								"d0991719-6d66-4156-b5cc-a159ef144e17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "接入机构管理禁用",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.109:8088/beaver/organization/changeStatus",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"109"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "审核机构",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "businessId",
+									"value": "1232543562",
+									"type": "text"
+								},
+								{
+									"key": "auditState",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "auditRemark",
+									"value": "23142",
+									"type": "text"
+								},
+								{
+									"key": "auditUser",
+									"value": "234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.0.112:8088/beaver/organization/audit",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"112"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"audit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "服务申请",
+			"item": [
+				{
+					"name": "申请",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orgId\": \"d0991719-6d66-4156-b5cc-a159ef144e17\",\r\n    \"userId\": \"62913afc-995a-4813-88ae-5070187cd317\",\r\n    \"apiList\": [\r\n        {\"apiId\":\"0f057d57-af25-48c5-8200-38afb84e09b3\",\"columns\":\"name,user\"}\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/apply",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"apply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "分页查询服务（API）申请记录",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/searchApply?curpage=0&percount=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"searchApply"
+							],
+							"query": [
+								{
+									"key": "curpage",
+									"value": "0"
+								},
+								{
+									"key": "percount",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务（API）查询：已审核通过的api记录",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/userRelate/search?curpage=0&percount=10&beginTime=20220201000000&endTime=20220801000000&apiName=69&apiGroupId=6ee4d939-4ed5-4c7e-88e5-6c9c76858be3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"userRelate",
+								"search"
+							],
+							"query": [
+								{
+									"key": "curpage",
+									"value": "0"
+								},
+								{
+									"key": "percount",
+									"value": "10"
+								},
+								{
+									"key": "beginTime",
+									"value": "20220201000000"
+								},
+								{
+									"key": "endTime",
+									"value": "20220801000000"
+								},
+								{
+									"key": "apiName",
+									"value": "69"
+								},
+								{
+									"key": "apiGroupId",
+									"value": "6ee4d939-4ed5-4c7e-88e5-6c9c76858be3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "根据申请记录ID查询API",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/getApiList/6036a259-8bef-4e32-91d2-5a86bdb3768d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"getApiList",
+								"6036a259-8bef-4e32-91d2-5a86bdb3768d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "取消申请",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/cancelApply/6036a259-8bef-4e32-91d2-5a86bdb3768d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"cancelApply",
+								"6036a259-8bef-4e32-91d2-5a86bdb3768d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务申请审核",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"businessId\": \"6036a259-8bef-4e32-91d2-5a86bdb3768d\",\r\n    \"auditState\": \"1\",\r\n    \"auditRemark\": \"22222\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/audit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"audit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "应用管理",
+			"item": [
+				{
+					"name": "保存应用",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "零零",
+									"type": "text"
+								},
+								{
+									"key": "logo",
+									"value": "https://www.baidu.com",
+									"type": "text"
+								},
+								{
+									"key": "isEncry",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "useCase",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "comment",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "orgId",
+									"value": "d0991719-6d66-4156-b5cc-a159ef144e17",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "应用审核",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"businessId\": \"52ded7e0-47ed-4a68-b5db-e1c9134b9955\",\r\n    \"auditState\": \"1\",\r\n    \"auditRemark\": \"22222\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/audit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"audit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "根据条件分页检索app",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pageNum",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "pageSize",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "orgId",
+									"value": "d0991719-6d66-4156-b5cc-a159ef144e17",
+									"type": "text"
+								},
+								{
+									"key": "searchText",
+									"value": "零",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "检索app未授权过的api信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apiName",
+									"value": "6iuk",
+									"type": "text"
+								},
+								{
+									"key": "apiGroupId",
+									"value": "4878d5a9-5d43-41f2-a6bd-a539c08b80ea",
+									"type": "text"
+								},
+								{
+									"key": "appId",
+									"value": "52ded7e0-47ed-4a68-b5db-e1c9134b9955",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/unauth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"unauth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "检索授权信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apiName",
+									"value": "6iuk",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "apiGroupId",
+									"value": "4878d5a9-5d43-41f2-a6bd-a539c08b80ea",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "appId",
+									"value": "52ded7e0-47ed-4a68-b5db-e1c9134b9955",
+									"type": "text"
+								},
+								{
+									"key": "apiStatus",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "appStatus",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "curpage",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "percount",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.0.112:8088/beaver/app/auth/search",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"112"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"auth",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "添加授权信息（给应用绑定多个API）",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"appId\": \"52ded7e0-47ed-4a68-b5db-e1c9134b9955\",\r\n        \"apiId\": \"577bc6ed-f6b7-4b63-b07f-1269a863f941\"\r\n    },\r\n    {\r\n        \"appId\": \"52ded7e0-47ed-4a68-b5db-e1c9134b9955\",\r\n        \"apiId\": \"ea56dbf0-eec5-498c-98e3-e2b2fec995a0\"\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/auth/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"auth",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除应用",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"organizationInfo\": {\r\n        \"registerType\": \"1\",\r\n        \"orgCode\": \"1\",\r\n        \"orgName\": \"机构1\",\r\n        \"contacts\": \"zhangsan\",\r\n        \"contactPhone\": \"12333323232\",\r\n        \"registerRemark\": \"\"\r\n    },\r\n    \"admin\": {\r\n        \"name\": \"王\",\r\n        \"account\": \"account@qq.com\",\r\n        \"password\": \"111111111\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/delete/f2c3715f-1404-405a-8750-cb556328f042",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"delete",
+								"f2c3715f-1404-405a-8750-cb556328f042"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除指定appid的授权信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    \"7368a38f-6bbf-432b-b123-d905c72a1d8d\"\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/auth/delete/52ded7e0-47ed-4a68-b5db-e1c9134b9955",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"auth",
+								"delete",
+								"52ded7e0-47ed-4a68-b5db-e1c9134b9955"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询所有的app",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/all/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"all",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "机构下拉框",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "服务领域",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/beaver/trade/findAl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"trade",
+								"findAl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "接口开通审核 列表接口",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "percount",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "curpage",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "auditState",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "orgId",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.0.107:8088/beaver/apply/searchApply",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"107"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"searchApply"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "机构人员管理",
+			"item": [
+				{
+					"name": "保存机构人员信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "1111111111111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"orgId\":\"d0991719-6d66-4156-b5cc-a159ef144e17\",\r\n    \"name\": \"44\",\r\n    \"account\": \"4433466@qq.com\",\r\n    \"password\": \"444\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/orgUser/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"orgUser",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "分页查询机构人员信息",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/orgUser/search?pageNum=1&pageSize=10&orgId=d0991719-6d66-4156-b5cc-a159ef144e17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"orgUser",
+								"search"
+							],
+							"query": [
+								{
+									"key": "pageNum",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "orgId",
+									"value": "d0991719-6d66-4156-b5cc-a159ef144e17"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除机构人员信息",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"organizationInfo\": {\r\n        \"registerType\": \"1\",\r\n        \"orgCode\": \"1\",\r\n        \"orgName\": \"机构1\",\r\n        \"contacts\": \"zhangsan\",\r\n        \"contactPhone\": \"12333323232\",\r\n        \"registerRemark\": \"\"\r\n    },\r\n    \"admin\": {\r\n        \"name\": \"王\",\r\n        \"account\": \"account@qq.com\",\r\n        \"password\": \"111111111\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/orgUser/delete/01bebdd8-8728-4836-bc69-0ab1a3b509a5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"orgUser",
+								"delete",
+								"01bebdd8-8728-4836-bc69-0ab1a3b509a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "将人员权限设置成为既是服务使用者又提供者",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/orgUser/resetRole/01bebdd8-8728-4836-bc69-0ab1a3b509a5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"orgUser",
+								"resetRole",
+								"01bebdd8-8728-4836-bc69-0ab1a3b509a5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

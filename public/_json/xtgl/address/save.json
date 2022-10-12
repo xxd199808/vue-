@@ -1,0 +1,13 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "728b5c8e-a063-487e-ae1f-6760d32103a8",
+        "service_address": "http://bing.com",
+        "comment": "测试地址21",
+        "create_time": null,
+        "create_by": "62913afc-995a-4813-88ae-5070187cd317",
+        "orgId": null
+    }
+}

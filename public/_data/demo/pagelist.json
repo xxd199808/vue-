@@ -1,0 +1,19 @@
+{
+    "des": "接口描述",
+    "success": true,
+    "msg": "",
+
+    "data": {
+        "curpage": 1,
+        "percount": 20,
+        "totalcount": 404,
+        "totalpage": 41,
+        "retlist": [
+            { "name": "名称1", "des": "描述1" },
+            { "name": "名称2", "des": "描述2" },
+            { "name": "名称3", "des": "描述3" },
+            { "name": "名称4", "des": "描述4" },
+            { "name": "名称5", "des": "描述5" }
+        ]
+    }
+}

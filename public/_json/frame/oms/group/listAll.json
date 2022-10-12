@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": [
+        {
+            "id": "f7132af4609a41bf9bb64c31fd429467",
+            "code": "他",
+            "name": "还好"
+        }
+    ]
+}

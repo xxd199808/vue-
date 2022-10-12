@@ -1,0 +1,27 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": [
+        {
+            "id": "84f5d088ab4d45168fc1b8f6dcc73c13",
+            "code": "11",
+            "name": "测试机构111",
+            "type": 1,
+            "parentId": "65687a6ffe3943958087fba8f3795a43",
+            "ouId": "84f5d088ab4d45168fc1b8f6dcc73c13",
+            "zoneId": "65687a6ffe3943958087fba8f3795a43",
+            "enable": false
+        },
+        {
+            "id": "24ab3cf02afa46a7ba109dab8e6c6edf",
+            "code": "jg002",
+            "name": "testjg",
+            "fullname": "啊啊啊",
+            "type": 1,
+            "parentId": "65687a6ffe3943958087fba8f3795a43",
+            "ouId": "24ab3cf02afa46a7ba109dab8e6c6edf",
+            "zoneId": "65687a6ffe3943958087fba8f3795a43"
+        }
+    ]
+}

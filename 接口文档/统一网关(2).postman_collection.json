@@ -1,0 +1,1709 @@
+{
+	"info": {
+		"_postman_id": "0743dd7e-5234-4b3b-aee4-388ae69f3b63",
+		"name": "统一网关",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "机构管理",
+			"item": [
+				{
+					"name": "保存机构",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "ddfe2d2c-49e8-41dc-b7a4-053573bf2e9c",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"organizationInfo\": {\r\n        \"registerType\": \"2\",\r\n        \"orgCode\": \"2\",\r\n        \"orgName\": \"机构1222\",\r\n        \"contacts\": \"zhangsan22\",\r\n        \"contactPhone\": \"2222222222222\",\r\n        \"registerRemark\": \"2222\"\r\n    },\r\n    \"admin\": {\r\n        \"name\": \"王2222\",\r\n        \"account\": \"account2222@qq.com\",\r\n        \"password\": \"222222\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/organization/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "分页查询机构",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"curpage\": 1,\r\n    \"percount\": 10,\r\n    \"orgName\": \"\",\r\n    \"status\": \"0\",\r\n    \"auditState\": \"0\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/organization/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除机构",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"0042ad47-01c9-4ae4-a936-90c15fee3d6f\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/organization/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "启用禁用",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "token",
+								"value": "11",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"0042ad47-01c9-4ae4-a936-90c15fee3d6f\",\"status\":\"1\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/organization/changeStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "根据机构ID获取机构详情",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"0042ad47-01c9-4ae4-a936-90c15fee3d6f\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/organization/info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询所有机构",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/organization/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"organization",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "服务申请",
+			"item": [
+				{
+					"name": "申请",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orgId\": \"d0991719-6d66-4156-b5cc-a159ef144e17\",\r\n    \"userId\": \"62913afc-995a-4813-88ae-5070187cd317\",\r\n    \"apiList\": [\r\n        {\"apiId\":\"211b1b3a-b4c2-4356-a274-b46aedcb9946\",\"columns\":\"mobile\"}\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/apply",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"apply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "分页查询服务（API）申请记录",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"curpage\": 1,\r\n    \"percount\": 10\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/searchApply",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"searchApply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务（API）查询：已审核通过的api记录",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"curpage\": 1,\r\n    \"percount\": 10,\r\n    \"applyId\": \"\",\r\n    \"apiGroupId\": \"\",\r\n    \"apiName\": \"\",\r\n    \"beginDate\": \"\",\r\n    \"endDate\": \"\",\r\n    \"auditState\": \"\",\r\n    \"orgId\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/userRelate/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"userRelate",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取未申请过的API列表",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/unappliedApiList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"unappliedApiList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取API的返回结果",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"apiId\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/getResultsList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"getResultsList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "根据申请记录ID查询API",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/getApiList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"getApiList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "取消申请",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"6036a259-8bef-4e32-91d2-5a86bdb3768d\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/cancelApply",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"cancelApply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除申请",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "服务申请审核",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"businessId\": \"6036a259-8bef-4e32-91d2-5a86bdb3768d\",\r\n    \"auditState\": \"1\",\r\n    \"auditRemark\": \"22222\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/apply/audit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apply",
+								"audit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "应用管理",
+			"item": [
+				{
+					"name": "平台管理员",
+					"item": [
+						{
+							"name": "添加授权信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "111",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"appId\": \"52ded7e0-47ed-4a68-b5db-e1c9134b9955\",\r\n        \"apiId\": \"577bc6ed-f6b7-4b63-b07f-1269a863f941\"\r\n    },\r\n    {\r\n        \"appId\": \"52ded7e0-47ed-4a68-b5db-e1c9134b9955\",\r\n        \"apiId\": \"ea56dbf0-eec5-498c-98e3-e2b2fec995a0\",\r\n        \"columns\":\"mobile\"\r\n    }\r\n]"
+								},
+								"url": {
+									"raw": "http://192.168.0.124:8088/beaver/app/auth/add",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"0",
+										"124"
+									],
+									"port": "8088",
+									"path": [
+										"beaver",
+										"app",
+										"auth",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "检索app未授权过的api信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "111",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"apiName\":\"\",\"apiGroupId\":\"\",\"appId\":\"\"}"
+								},
+								"url": {
+									"raw": "http://192.168.0.124:8088/beaver/app/unauthForAdmin",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"0",
+										"124"
+									],
+									"port": "8088",
+									"path": [
+										"beaver",
+										"app",
+										"unauthForAdmin"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "保存应用",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"上对方\",\r\n    \"logo\": \"\",\r\n    \"isEncry\": \"0\",\r\n    \"useCase\": \"0\",\r\n    \"comment\": \"commentcommentcomment\",\r\n    \"orgId\": \"d0991719-6d66-4156-b5cc-a159ef144e17\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "启用禁用",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"0042ad47-01c9-4ae4-a936-90c15fee3d6f\",\"status\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/apiCategory/changeStatus",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apiCategory",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "应用审核",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"businessId\": \"52ded7e0-47ed-4a68-b5db-e1c9134b9955\",\r\n    \"auditState\": \"1\",\r\n    \"auditRemark\": \"22222\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/audit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"audit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "根据条件分页检索app",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"curpage\":1,\"percount\":10,\"orgId\":\"d0991719-6d66-4156-b5cc-a159ef144e17\",\"searchText\":\"\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "检索app未授权过的api信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"apiName\":\"\",\"apiGroupId\":\"\",\"appId\":\"\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/unauth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"unauth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "检索授权信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"curpage\": 1,\r\n    \"percount\": 10,\r\n    \"appId\": \"\",\r\n    \"apiGroupId\": \"\",\r\n    \"apiName\": \"\",\r\n    \"apiStatus\": \"\",\r\n    \"appStatus\": \"\",\r\n    \"deleteFlag\": \"\",\r\n    \"orgId\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/auth/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"auth",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "添加授权信息（给应用绑定多个API）",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"appId\": \"52ded7e0-47ed-4a68-b5db-e1c9134b9955\",\r\n        \"apiId\": \"577bc6ed-f6b7-4b63-b07f-1269a863f941\"\r\n    },\r\n    {\r\n        \"appId\": \"52ded7e0-47ed-4a68-b5db-e1c9134b9955\",\r\n        \"apiId\": \"ea56dbf0-eec5-498c-98e3-e2b2fec995a0\"\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/auth/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"auth",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除应用",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"1\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取行业领域",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/trade/findAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"trade",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除指定appid的授权信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    \"c0b0dcf2-554c-4876-b09e-67ee865c9520\"\r\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/auth/delete/52ded7e0-47ed-4a68-b5db-e1c9134b9955",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"auth",
+								"delete",
+								"52ded7e0-47ed-4a68-b5db-e1c9134b9955"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询所有的app",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/app/all/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"app",
+								"all",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "机构人员管理",
+			"item": [
+				{
+					"name": "保存机构人员信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "1111111111111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orgId\":\"d0991719-6d66-4156-b5cc-a159ef144e17\",\r\n    \"name\": \"44\",\r\n    \"account\": \"4433466@qq.com\",\r\n    \"password\": \"444\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/orgUser/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"orgUser",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "分页查询机构人员信息",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"curpage\":1,\"percount\":10,\"orgId\":\"d0991719-6d66-4156-b5cc-a159ef144e17\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/orgUser/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"orgUser",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除机构人员信息",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/orgUser/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"orgUser",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "将人员权限设置成为既是服务使用者又提供者",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/orgUser/resetRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"orgUser",
+								"resetRole"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "登录",
+			"item": [
+				{
+					"name": "登录",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"account\":\"account2222@qq.com\",\"password\":\"222222\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/sso/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"sso",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "注销",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "7fd9b093-951d-47f7-bb17-10b18ff2666a",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/sso/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"sso",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取用户信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "57341ebd-7953-4557-ad3f-3dfe094260d4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8088/beaver/sso/getUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"sso",
+								"getUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "服务分类",
+			"item": [
+				{
+					"name": "保存",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"code\": \"ttt5t5\",\r\n        \"name\": \"文化\",\r\n        \"sort\": 2,\r\n        \"comment\": 1\r\n    }"
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/apiCategory/save",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apiCategory",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询全部",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/apiCategory/findAll",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apiCategory",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "启用禁用",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"11\",\"status\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/apiCategory/changeStatus",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"apiCategory",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "接口开通",
+			"item": [
+				{
+					"name": "接口开通列表",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"curpage\":1,\"percount\":10,\"orgId\":\"d0991719-6d66-4156-b5cc-a159ef144e17\"}"
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/userRelate/search",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"userRelate",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "接口开通：给机构批量分配API",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\"apiId\":\"211b1b3a-b4c2-4356-a274-b46aedcb9946\",\"orgId\":\"d0991719-6d66-4156-b5cc-a159ef144e17\",\"columns\":\"mobile\"}\r\n]"
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/userRelate/assignApiForOrg",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"userRelate",
+								"assignApiForOrg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "移除接口开通记录",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/userRelate/delete",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"userRelate",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "接口开通：数据权限",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"db8acdd6-7d80-468c-bade-8222a9d2c764\",\"columns\":\"phone\"}"
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/userRelate/authorize",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"userRelate",
+								"authorize"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "使用场景分类",
+			"item": [
+				{
+					"name": "保存",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"code\": \"52ded7e0\",\r\n        \"name\": \"地铁\",\r\n        \"sort\": 0,\r\n        \"comment\": 1\r\n    }"
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/useCase/save",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"useCase",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询全部",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/useCase/findAll",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"useCase",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "启用禁用",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"11\",\"status\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://192.168.0.124:8088/beaver/useCase/changeStatus",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"124"
+							],
+							"port": "8088",
+							"path": [
+								"beaver",
+								"useCase",
+								"changeStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

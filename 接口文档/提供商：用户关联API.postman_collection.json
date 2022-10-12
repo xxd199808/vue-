@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "e90aea3b-15c7-4074-976e-48275aa3922d",
+		"name": "提供商：用户关联API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "批量移除关联关系",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"1\",\"2\"]"
+				},
+				"url": {
+					"raw": "http://localhost:8088/beaver/providerRelate/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"providerRelate",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "给用户批量分配API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"orgId\": \"fdf6afab-b8e5-4b2a-ae39-b278824e9b34\",\r\n        \"userId\": \"44a7a73e-e54b-44fb-869e-120c0da578c9\",\r\n        \"apiId\": \"01b40997-119a-46f1-82dd-7fbd45ffb94e\"\r\n    }\r\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8088/beaver/providerRelate/assignApiForOrg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"providerRelate",
+						"assignApiForOrg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询未关联的API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"curpage\": 1,\r\n    \"percount\": 10,\r\n    \"api_group_id\": \"a3075c9f-9960-4f8b-818b-f3c2f0a4a1a5\",\r\n    \"userId\": \"44a7a73e-e54b-44fb-869e-120c0da578c9\",\r\n    \"apiName\": \"bbb\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/beaver/providerRelate/searchNoRelated",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"providerRelate",
+						"searchNoRelated"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询已关联的API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"curpage\": 1,\r\n    \"percount\": 10,\r\n    \"api_group_id\": \"a3075c9f-9960-4f8b-818b-f3c2f0a4a1a5\",\r\n    \"userId\": \"44a7a73e-e54b-44fb-869e-120c0da578c9\",\r\n    \"apiName\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/beaver/providerRelate/searchRelated",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"providerRelate",
+						"searchRelated"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

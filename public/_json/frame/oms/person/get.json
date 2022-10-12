@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": {
+        "id": "61fef69b39a448289b9379555ee82e98",
+        "loginname": "1212",
+        "password": "$2a$10$hOsANUze29AXkEDw853ZuuVOoVm7UiLu4fsD.u2UzofX.SgRKlvhu",
+        "realname": "1212",
+        "depId": "24ab3cf02afa46a7ba109dab8e6c6edf"
+    }
+}

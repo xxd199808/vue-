@@ -1,0 +1,20 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": [
+    {
+        "id": "845ebd74-952d-42f8-814f-752f240323bb",
+        "code": "404",
+        "codeMsg": "resource not found",
+        "codeDesc": "错误描述",
+        "orgId": "SYSTEM"
+    },
+    {
+        "id": "fe19cc00-bff2-4781-94cd-fd200d98737a",
+        "code": "403",
+        "codeMsg": "forbbiden",
+        "codeDesc": "错误描述",
+        "orgId": "SYSTEM"
+    }]
+}

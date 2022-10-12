@@ -1,0 +1,18 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": [
+    {
+        "id": "8baa1b69-3753-4cdd-b539-9da4a8a529ad",
+        "apiBaseId": "7d5bdeac-e181-4843-aab6-19714804de35",
+        "resultCode": "id",
+        "resultDesc": "主键"
+    },
+    {
+        "id": "f2d30683-3996-49aa-bb97-8f3e34659dea",
+        "apiBaseId": "7d5bdeac-e181-4843-aab6-19714804de35",
+        "resultCode": "name",
+        "resultDesc": "属性值"
+    }]
+}

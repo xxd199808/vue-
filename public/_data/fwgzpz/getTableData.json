@@ -1,0 +1,24 @@
+{
+    "success": true,
+    "statusCode": 200,
+    "msg": "success",
+    "data": {
+        "totalcount": 86,
+        "totalPages": 43,
+        "pageNumber": 1,
+        "retlist": [
+        {
+            "clmc": "控制策略",
+            "cllx": "0",
+            "clms": "控制xxx",
+            "cjr": "张三",
+            "gxsj": "2022-04-14"
+        }, {
+            "clmc": "控制策略",
+            "cllx": "1",
+            "clms": "控制xxx",
+            "cjr": "张三",
+            "gxsj": "2022-04-14"
+        }]
+    }
+}

@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+//字体文件请改为英文，中文在现场的部分服务器中不被识别
+//@font-face {
+//    font-family: "zzgflht";
+//    src: url("../../assets/font/zzgflht.otf");
+//}
+
+body,
+html,
+div,
+blockquote,
+img,
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+a,
+fieldset,
+button,
+input,
+select,
+textarea,
+th,
+td,
+span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: @s_font/1.5 "pingfang SC", "\5FAE\8F6F\96C5\9ED1", arial, verdana, sans-serif;
+    color: #333;
+}
+ul,
+ol {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+}
+
+html,
+body {
+    height: 100%;
+    background: #E8EBF0;
+}
+
+// 公共样式
+.wrap {}
+.wrap-abs {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+.wrap-con {}
+.page {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    //background: #E8EBF0;
+    overflow: auto;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    &>.flex1 {
+        width: 0;
+    }
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    &>.flex1 {
+        height: 0;
+    }
+}
+.flex1 {
+    flex: 1;
+    overflow: auto;
+}
+//通用容器
+//<div class="panel">
+//    <div class="panel-head">
+//        <div class="panel-head-l"><div class="panel-icon _info"></div>标题</div>
+//        <div class="panel-head-r">更多</div>
+//    </div>
+//    <div class="panel-body">
+//        内容
+//    </div>
+//</div>
+.panel {
+    background: #fff;
+    border-radius: 8px;
+}
+.panel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(to bottom, #fff, #F7F8FA);
+}
+.panel-head-l {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.panel-head-l-icon {
+    width: 4px;
+    height: 17px;
+    margin-right: 8px;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #4A96FF, #1F4E99);
+}
+.panel-body {
+    padding: 20px;
+}
+.panel-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background: center no-repeat;
+    //background-size: 22px;
+}
+//容器间距
+.panel+.panel {
+    margin-top: 16px;
+}
+.flex-row>.panel+.panel {
+    margin-top: 0;
+    margin-left: 16px;
+}
+
+//覆写 element 样式
+@import './element.less';
+//覆写 wiv 样式
+@import './wiv.less';
+//覆写 hami 样式
+@import './hamigua.less';
+
+// 过滤条
+.filter-bar {
+    &._between {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .el-button,
+    .el-button:focus {
+        padding: 10px 15px;
+    }
+}
+// 标签
+.el-tabs._badge {
+    .el-tabs__item {
+        height: 50px;
+        padding: 10px 20px;
+        line-height: 30px;
+        font-size: 16px;
+
+        &:hover,
+        &.is-active {
+            color: @c_main;
+        }
+        .el-badge {
+            padding: 0 5px;
+        }
+    }
+    .el-tabs__active-bar {
+        background-color: @c_main;
+    }
+}
+
+// 可编辑表格
+.edittable-table {
+    //&.el-table--medium .el-table__body-wrapper .el-table__cell {
+    //    padding: 0;
+    //}
+    &.el-table--small .el-table__body-wrapper .el-table__cell {
+        padding: 0;
+    }
+    //&.el-table--mini .el-table__body-wrapper .el-table__cell {
+    //    padding: 0;
+    //}
+
+    //el 样式默认有 margin-bottom，表单项验证提示内容显示在元素下方
+    //为实现元素垂直居中，补齐 margin-top，并使其与 margin-bottom 一致
+    //.el-form-item--medium.el-form-item,
+    .el-form-item--mini.el-form-item,
+    .el-form-item--small.el-form-item {
+        margin-top: 18px;
+    }
+}
+
+// 上传图片
+.avatar-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px dashed #d9d9d9;
+    font-size: 30px;
+    color: #d9d9d9;
+    border-radius: 8px;
+    overflow: hidden;
+    &:hover {
+        border-color: @c_main;
+        color: @c_main;
+    }
+}
+.avatar-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+//json预览样式
+code.hljs {
+    line-height: 1.5;
+    padding: 18px 24px;
+    background-color: #fafafa;
+    border: solid 1px #eaeefb;
+    border-radius: 4px;
+    -webkit-font-smoothing: auto;
+}
+//md预览样式
+.doc-md{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 16px 0 8px;
+        padding-left: 10px;
+    }
+    a {
+        color: @c_main;
+        text-decoration: none;
+    }
+    p {
+        margin: 5px 0;
+        color: #666;
+    }
+
+    .hljs {
+        padding: 18px 24px;
+        line-height: 1.5;
+        background-color: #fafafa;
+        border: 1px solid #eaeefb;
+        margin: 10px 0;
+        border-radius: 4px;
+        -webkit-font-smoothing: auto;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 10px;
+        td,
+        th {
+            padding: 10px;
+            border: 1px solid #dcdfe6;
+            color: #606266;
+        }
+        th {
+            white-space: nowrap;
+            color: #909399;
+        }
+    }
+}

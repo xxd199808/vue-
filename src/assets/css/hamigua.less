@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+// 首页tab
+.hami-index-tab {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    & > .el-tabs__header {
+        margin: 0;
+        background: transparent;
+        border-color: #fff;
+        .el-tabs__nav {
+            border-color: transparent;
+        }
+        .el-tabs__item {
+            height: 40px;
+            line-height: 40px;
+            color: #707070;
+            border-color: transparent;
+            &.is-active {
+                border-radius: 8px 8px 0 0;
+                background: #fff;
+                color: #333333;
+                &:focus.is-focus:not(:active) {
+                    box-shadow: none;
+                }
+            }
+            .el-icon-close {
+                line-height: 14px;
+            }
+        }
+        .el-tabs__nav-next,
+        .el-tabs__nav-prev {
+            width: 20px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+    & > .el-tabs__content {
+        height: 0;
+        flex: 1;
+        & > .el-tab-pane {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+    }
+}
+.hami-index-tab-label {
+    position: relative;
+    display: inline-block;
+}
+.hami-index-tab-dropdown {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    color: inherit;
+    font-size: inherit;
+}
+.hami-index-tab-dropdown-menu.el-popper[x-placement^="bottom"] {
+    margin-top: 0;
+}
+//滚动条
+.hami-scrollbar {
+    height: 100%;
+    .el-scrollbar__wrap {
+        overflow-x: hidden;
+    }
+}

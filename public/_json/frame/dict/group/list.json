@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": [
+        {
+            "id": "1",
+            "code": "SYS",
+            "name": "系统字典"
+        }
+    ]
+}

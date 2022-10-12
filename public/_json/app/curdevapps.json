@@ -1,0 +1,31 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": [
+    {
+        "id": "ef1b30b6-4205-48d0-a185-ea357dff6f1f",
+        "name": "app",
+        "comment": "aaaaa",
+        "appid": "GqsnCJcD",
+        "appSecret": "4ecf28ec34bb498f87baede413e7ed58",
+        "serverSecret": "47313ea923554e8e83adbe5580004afc",
+        "status": null,
+        "createTime": "2022-04-30 17:44:11",
+        "createBy": "8bca1ae4-be45-447c-9190-ef8d5df1aff7",
+        "orgId": "4eba92ed-5789-40cb-a4c6-6026f627682b",
+        "logo": "",
+        "isEncry": "0",
+        "tradeId": "1",
+        "tradeName": "电子",
+        "useCase": "身份验证",
+        "auditState": "1",
+        "auditRemark": "aaaa",
+        "auditUser": null,
+        "auditTime": "2022-04-30 17:45:11",
+        "updatedTime": null,
+        "updatedBy": null,
+        "disableReason": null,
+        "deleteFlag": "0"
+    }]
+}

@@ -1,0 +1,46 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "totalcount": 3,
+        "totalPages": null,
+        "percount": 10,
+        "curpage": 1,
+        "retlist": [
+        {
+            "id": null,
+            "apiId": "4ca34e7d-47b2-40c5-aa9a-746bfc23cd88",
+            "apiName": "bbb",
+            "logoNfmId": null,
+            "apiComment": null,
+            "status": 1,
+            "createdTime": "2021-12-15 16:27:03"
+        },
+        {
+            "id": null,
+            "apiId": "99b7e250-5f89-46ff-9fbf-8cdc406baa84",
+            "apiName": "bbb1",
+            "logoNfmId": null,
+            "apiComment": null,
+            "status": 1,
+            "createdTime": "2021-12-15 16:28:27"
+        },
+        {
+            "id": null,
+            "apiId": "16cc5256-63e2-4bff-a9ac-4290c7272037",
+            "apiName": "bbb4",
+            "logoNfmId": null,
+            "apiComment": null,
+            "status": 0,
+            "createdTime": "2021-12-15 16:29:15"
+        }],
+        "apiGroupId": null,
+        "apiName": "bbb",
+        "beginDate": null,
+        "endDate": null,
+        "orgId": null,
+        "userId": "44a7a73e-e54b-44fb-869e-120c0da578c9",
+        "pageNumber": 1
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "success": true,
+    "msg": "",
+    "data": [
+    {
+        "jkmc": "",
+        "jktgz": "",
+        "sjqx": "1,3,2",
+        "isfws": "0"
+    }, {
+        "jkmc": "",
+        "jktgz": "",
+        "sjqx": "2,3",
+        "isfws": "1"
+    }, {
+        "jkmc": "",
+        "jktgz": "",
+        "sjqx": "2,3",
+        "isfws": "1"
+    }, {
+        "jkmc": "",
+        "jktgz": "",
+        "sjqx": "2,3",
+        "isfws": "0"
+    }, {
+        "jkmc": "",
+        "jktgz": "",
+        "sjqx": "2,3",
+        "isfws": "1"
+    }, {
+        "jkmc": "",
+        "jktgz": "",
+        "sjqx": "2,3",
+        "isfws": "0"
+    }, {
+        "jkmc": "",
+        "jktgz": "",
+        "sjqx": "2,3",
+        "isfws": "1"
+    }]
+}

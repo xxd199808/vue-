@@ -1,0 +1,14 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "查询成功",
+    "data": {
+        "id": "402883f3814b9b8501814b9c8d410000",
+        "appid": "001",
+        "symflag": "1",
+        "asyflag": "4",
+        "key": "4366102AD63196EE27D3211C1F5D9525",
+        "publickey": "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJWnzMQsKhY1GHFzLHM5BN6aW3rI1D3v8dq47nGKwQe+Pm5ysn02ifZQEQtGoBNJ1ynCDcjIU/OpuxaW6Blr9r8CAwEAAQ==",
+        "privatekey": "MIIBUwIBADANBgkqhkiG9w0BAQEFAASCAT0wggE5AgEAAkEAlafMxCwqFjUYcXMsczkE3ppbesjUPe/x2rjucYrBB74+bnKyfTaJ9lARC0agE0nXKcINyMhT86m7FpboGWv2vwIDAQABAkBtUSVCJwCXODGirX7Kq9vivt4T0p82nw8Ltgp25eQawr4i7jh4JUmZWoxHCukfgZoAFKPc/GTB9MQ0Yxlp70ABAiEA0nPL7wLZRZHU7YvoT+D8Kn9ClOAYobwtUkR8U5JY8l8CIQC2C4bJxoaranK5OL3ic3GlIKpnMGKudfsB7UX4vGsXoQIgT9pWQBuBm48pDvVuMZj5tZpSBjE9x2iifbu0vPUjwNsCIAVCHfmUD23CHGA3QFzbIsw3PlTOs/sAE2kB1oSRxLIhAiB3BE+8gqUOPlX3b4Tue+Afd2ohQ0QjfejW1oxTrFbW2A=="
+    }
+}

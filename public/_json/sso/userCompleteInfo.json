@@ -1,0 +1,1 @@
+{ "success": true, "code": 200, "msg": "success", "data": { "zone": null, "person": { "id": "1", "loginname": "superadmin", "password": "$2a$10$ryP0J3YPa0ngt9TPl5lo4el5wACabUP7XjhxT4LGJe7n0WE882yQq", "realname": "超级管理员", "userRole": "sysAdmin" }, "department": null } }

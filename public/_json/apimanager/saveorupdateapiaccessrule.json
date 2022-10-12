@@ -1,0 +1,13 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "bf499421-5016-4a19-8c87-9b10d5b28d0b",
+        "apiBaseInfoId": "7d5bdeac-e181-4843-aab6-19714804de35",
+        "limitPerDay": 80,
+        "tps": 1000,
+        "accessStartTime": "2021-12-14 16:11:05",
+        "accessEndTime": "2022-10-01 16:11:05"
+    }
+}

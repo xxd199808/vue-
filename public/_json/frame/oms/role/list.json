@@ -1,0 +1,24 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": {
+        "totalpage": 1,
+        "totalcount": 2,
+        "curpage": 1,
+        "retlist": [
+            {
+                "id": "2000bed0a0ba4a40ac10bf71c037cbc7",
+                "code": "12",
+                "name": "22",
+                "ouId": "84f5d088ab4d45168fc1b8f6dcc73c13"
+            },
+            {
+                "id": "36a287d0ba5b4094a81c2286cb008146",
+                "code": "9",
+                "name": "9",
+                "ouId": "84f5d088ab4d45168fc1b8f6dcc73c13"
+            }
+        ]
+    }
+}

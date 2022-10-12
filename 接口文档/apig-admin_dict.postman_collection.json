@@ -1,0 +1,993 @@
+{
+	"info": {
+		"_postman_id": "41d46bab-1c0b-472b-a9b2-44ad126a9433",
+		"name": "apig-admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "查询字典分组 树",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/dict/findDictGroupTree",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"findDictGroupTree"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "查询字典分组 树",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/dict/findDictGroupTree",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"findDictGroupTree"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "159"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": [\n        {\n            \"id\": \"root\",\n            \"groupName\": \"根目录\",\n            \"parentGroupId\": null,\n            \"children\": [],\n            \"open\": true,\n            \"sort\": 0,\n            \"createTime\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "保存或更新字典分组",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":null,\r\n    \"groupName\":\"test\",\r\n    \"parentGroupId\":\"root\",\r\n    \"sort\":1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/dict/editDictGroup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"editDictGroup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "保存或更新字典分组",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":null,\r\n    \"groupName\":\"test\",\r\n    \"parentGroupId\":\"root\",\r\n    \"sort\":1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/editDictGroup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"editDictGroup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "校验分组名称唯一",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "402884e9803b002301803b087d9a0000",
+							"type": "text"
+						},
+						{
+							"key": "groupName",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8088/dict/checkDictGroupUnique",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"checkDictGroupUnique"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "可用 不重复",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "402884e9803b002301803b087d9a0000",
+									"type": "text"
+								},
+								{
+									"key": "groupName",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/checkDictGroupUnique",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"checkDictGroupUnique"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": true\n}"
+				},
+				{
+					"name": "不可用，重复",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "groupName",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/checkDictGroupUnique",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"checkDictGroupUnique"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "51"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "根据id查询字典分组",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8088/dict/getDictGroupById?id=402884e9803b002301803b087d9a0000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"getDictGroupById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "402884e9803b002301803b087d9a0000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "根据id查询字典分组",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/getDictGroupById?id=402884e9803b002301803b087d9a0000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"getDictGroupById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "402884e9803b002301803b087d9a0000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "184"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": {\n        \"id\": \"402884e9803b002301803b087d9a0000\",\n        \"groupName\": \"test\",\n        \"parentGroupId\": \"root\",\n        \"children\": null,\n        \"open\": true,\n        \"sort\": 1,\n        \"createTime\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "分页查询字典",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "",
+							"description": "名称",
+							"type": "text"
+						},
+						{
+							"key": "groupId",
+							"value": "",
+							"description": "分组",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "",
+							"description": "类型",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "",
+							"description": "编码",
+							"type": "text"
+						},
+						{
+							"key": "curpage",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "percount",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8088/dict/findDictInfoPage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"findDictInfoPage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "分页查询字典",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"description": "名称",
+									"type": "text"
+								},
+								{
+									"key": "groupId",
+									"value": "",
+									"description": "分组",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"description": "类型",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "",
+									"description": "编码",
+									"type": "text"
+								},
+								{
+									"key": "curpage",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "percount",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/findDictInfoPage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"findDictInfoPage"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "133"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": {\n        \"totalcount\": 0,\n        \"totalPages\": 0,\n        \"percount\": null,\n        \"curpage\": 1,\n        \"retlist\": [],\n        \"pageNumber\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "根据id查询字典",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8088/dict/getDictInfoById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"getDictInfoById"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "根据id查询字典",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "402884e9803b002301803b6d88bc0002",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/getDictInfoById?id=402884e9803b002301803b6d88bc0002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"getDictInfoById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "402884e9803b002301803b6d88bc0002"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "285"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": {\n        \"id\": \"402884e9803b002301803b6d88bc0002\",\n        \"groupId\": \"402884e9803b002301803b087d9a0000\",\n        \"code\": \"code\",\n        \"name\": \"name\",\n        \"type\": \"3\",\n        \"value\": \"type=2时的值\",\n        \"sort\": 1,\n        \"createTime\": null,\n        \"children\": null,\n        \"curpage\": null,\n        \"percount\": null,\n        \"stepId\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "查询字典数据列表",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "dictInfoId",
+							"value": "",
+							"description": "字典id",
+							"type": "text"
+						},
+						{
+							"key": "dictCode",
+							"value": "",
+							"description": "字典code",
+							"type": "text"
+						},
+						{
+							"key": "parentId",
+							"value": "",
+							"description": "父级字典id",
+							"type": "text"
+						},
+						{
+							"key": "parentCode",
+							"value": "",
+							"description": "父级字典code,与parentId冲突",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8088/dict/findDictDataList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"findDictDataList"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "查询字典数据列表",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "dictInfoId",
+									"value": "",
+									"description": "字典id",
+									"type": "text"
+								},
+								{
+									"key": "dictCode",
+									"value": "",
+									"description": "字典code",
+									"type": "text"
+								},
+								{
+									"key": "parentId",
+									"value": "",
+									"description": "父级字典id",
+									"type": "text"
+								},
+								{
+									"key": "parentCode",
+									"value": "",
+									"description": "父级字典code,与parentId冲突",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/findDictDataList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"findDictDataList"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "360"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": [\n        {\n            \"id\": \"402884e9803b002301803b6d890b0003\",\n            \"dictInfoId\": \"402884e9803b002301803b6d88bc0002\",\n            \"dictCode\": null,\n            \"itemCode\": \"itemCode\",\n            \"itemName\": \"itemName\",\n            \"itemValue\": \"itemValue\",\n            \"remark\": \"remark\",\n            \"sort\": 1,\n            \"createTime\": null,\n            \"children\": null,\n            \"open\": false,\n            \"parentId\": null,\n            \"parentCode\": null,\n            \"curpage\": null,\n            \"percount\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "查询字典数据树",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "dictInfoId",
+							"value": "402884e9803b002301803b6d890b0003",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8088/dict/findDictDataTree",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"findDictDataTree"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "查询字典数据树",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/findDictDataTree?dictInfoId=402884e9803b002301803b6d88bc0002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"findDictDataTree"
+							],
+							"query": [
+								{
+									"key": "dictInfoId",
+									"value": "402884e9803b002301803b6d88bc0002"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "589"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": [\n        {\n            \"id\": null,\n            \"dictInfoId\": null,\n            \"dictCode\": null,\n            \"itemCode\": null,\n            \"itemName\": \"name\",\n            \"itemValue\": null,\n            \"remark\": null,\n            \"sort\": null,\n            \"createTime\": null,\n            \"children\": [\n                {\n                    \"id\": \"402884e9803b002301803b6d890b0003\",\n                    \"dictInfoId\": \"402884e9803b002301803b6d88bc0002\",\n                    \"dictCode\": null,\n                    \"itemCode\": \"itemCode\",\n                    \"itemName\": \"itemName\",\n                    \"itemValue\": \"itemValue\",\n                    \"remark\": \"remark\",\n                    \"sort\": 1,\n                    \"createTime\": null,\n                    \"children\": [],\n                    \"open\": false,\n                    \"parentId\": null,\n                    \"parentCode\": null,\n                    \"curpage\": null,\n                    \"percount\": null\n                }\n            ],\n            \"open\": true,\n            \"parentId\": null,\n            \"parentCode\": null,\n            \"curpage\": null,\n            \"percount\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "保存或更新字典",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":null,\r\n    \"groupId\":\"402884e9803b002301803b087d9a0000\",\r\n    \"code\":\"code\",\r\n    \"name\":\"name\",\r\n    \"value\":\"type=2时的值\",\r\n    \"type\":\"3\",//1列表，2字符串，3树\r\n    \"sort\":1,\r\n    \"children\":[\r\n        {\r\n            \"id\":null,\r\n            \"dictInfoId\":null,\r\n            \"dictCode\":\"code\",\r\n            \"itemCode\":\"itemCode\",\r\n            \"itemName\":\"itemName\",\r\n            \"itemValue\":\"itemValue\",\r\n            \"remark\":\"remark\",\r\n            \"sort\":1,\r\n            \"parentId\":null,\r\n            \"parentCode\":null\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8088/dict/editDictInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"editDictInfo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "保存或更新字典 stepId=树类型字典修改时选取的树节点",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":null,\r\n    \"groupId\":\"402884e9803b002301803b087d9a0000\",\r\n    \"code\":\"code\",\r\n    \"name\":\"name\",\r\n    \"value\":\"type=2时的值\",\r\n    \"type\":\"3\",\r\n    \"sort\":1,\r\n    \"stepId\":null,\r\n    \"children\":[\r\n        {\r\n            \"id\":null,\r\n            \"dictInfoId\":null,\r\n            \"dictCode\":\"code\",\r\n            \"itemCode\":\"itemCode\",\r\n            \"itemName\":\"itemName\",\r\n            \"itemValue\":\"itemValue\",\r\n            \"remark\":\"remark\",\r\n            \"sort\":1,\r\n            \"parentId\":null,\r\n            \"parentCode\":null\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/editDictInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"editDictInfo"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "80"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 204,\n    \"msg\": \"402884e9803b002301803b6d88bc0002\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "删除字典",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8088/dict/deleteDictInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"deleteDictInfo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "删除字典",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/deleteDictInfo?id=402884e9803b002301803b6d88bc0002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"deleteDictInfo"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "402884e9803b002301803b6d88bc0002"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "校验字典编码唯一",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "code",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8088/dict/checkDictCodeUnique",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"dict",
+						"checkDictCodeUnique"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "校验字典编码唯一",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/dict/checkDictCodeUnique",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"dict",
+								"checkDictCodeUnique"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"msg\": null,\n    \"data\": true\n}"
+				}
+			]
+		}
+	]
+}

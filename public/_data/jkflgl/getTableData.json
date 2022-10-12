@@ -1,0 +1,22 @@
+{
+    "success": true,
+    "statusCode": 200,
+    "msg": "success",
+    "data": {
+        "totalcount": 86,
+        "totalPages": 43,
+        "pageNumber": 1,
+        "retlist": [
+        {
+            "flbm": "HY001",
+            "flmc": "认证类",
+            "ms": "个人身份认证等",
+            "qyzt": "0"
+        }, {
+            "flbm": "HY002",
+            "flmc": "企业类",
+            "ms": "企业相关接口",
+            "qyzt": "1"
+        }]
+    }
+}

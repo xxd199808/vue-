@@ -1,0 +1,19 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "62913afc-995a-4813-88ae-5070187cd317",
+        "orgId": "d0991719-6d66-4156-b5cc-a159ef144e17",
+        "role": "0",
+        "name": "王2222",
+        "account": "account2222@qq.com",
+        "password": null,
+        "createdTime": "2022-04-13 19:48:24",
+        "updatedTime": null,
+        "createdBy": null,
+        "updatedBy": null,
+        "deleteFlag": "0",
+        "registerType": "2"
+    }
+}

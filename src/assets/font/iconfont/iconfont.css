@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "dzmz"; /* Project id 3320158 */
+  src: url('iconfont.ttf?t=1649747981371') format('truetype');
+}
+
+.dzmz {
+  font-family: "dzmz" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dzmz-tms:before {
+  content: "\e607";
+}
+
+.dzmz-fwfl:before {
+  content: "\e603";
+}
+
+.dzmz-search:before {
+  content: "\e604";
+}
+
+.dzmz-yrzjg:before {
+  content: "\e605";
+}
+
+.dzmz-sfrzl:before {
+  content: "\e606";
+}
+
+.dzmz-home:before {
+  content: "\e601";
+}
+

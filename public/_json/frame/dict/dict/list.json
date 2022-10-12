@@ -1,0 +1,56 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": "success",
+    "data": [
+        {
+            "id": "24d7e602143410497aaa80242c8251a",
+            "code": "44",
+            "name": "334",
+            "type": "json",
+            "value": "{\"a\":\"2\"}",
+            "orderNo": 2,
+            "groupCode": "SYS"
+        },
+        {
+            "id": "13",
+            "code": "hall",
+            "name": "所在大厅",
+            "type": "list",
+            "orderNo": 3,
+            "groupCode": "SYS"
+        },
+        {
+            "id": "11",
+            "code": "ouType",
+            "name": "机构类型",
+            "type": "list",
+            "orderNo": 1,
+            "groupCode": "SYS"
+        },
+        {
+            "id": "15",
+            "code": "reportType",
+            "name": "报表分组",
+            "type": "list",
+            "orderNo": 5,
+            "groupCode": "SYS"
+        },
+        {
+            "id": "12",
+            "code": "sex",
+            "name": "性别",
+            "type": "list",
+            "orderNo": 2,
+            "groupCode": "SYS"
+        },
+        {
+            "id": "14",
+            "code": "userRole",
+            "name": "用户角色",
+            "type": "list",
+            "orderNo": 4,
+            "groupCode": "SYS"
+        }
+    ]
+}

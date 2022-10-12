@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "id": "fe19cc00-bff2-4781-94cd-fd200d98737a",
+        "code": "403",
+        "codeMsg": "forbbiden",
+        "codeDesc": "错误描述",
+        "orgId": "SYSTEM"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": [
+    {
+        "app_auth_id": null,
+        "app_id": null,
+        "app_name": null,
+        "api_id": "0f057d57-af25-48c5-8200-38afb84e09b3",
+        "api_name": "69",
+        "api_base_path": "/",
+        "api_path": "69",
+        "api_comment": null,
+        "auth_expire": null,
+        "status": null
+    }]
+}

@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "0d0e1038-caad-4ce6-903f-2afa950a5242",
+		"name": "应用管理-平台管理员",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "添加授权信息",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"appId\": \"52ded7e0-47ed-4a68-b5db-e1c9134b9955\",\r\n        \"apiId\": \"577bc6ed-f6b7-4b63-b07f-1269a863f941\"\r\n    },\r\n    {\r\n        \"appId\": \"52ded7e0-47ed-4a68-b5db-e1c9134b9955\",\r\n        \"apiId\": \"ea56dbf0-eec5-498c-98e3-e2b2fec995a0\",\r\n        \"columns\":\"mobile\"\r\n    }\r\n]"
+				},
+				"url": {
+					"raw": "http://192.168.0.124:8088/beaver/app/auth/add",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"124"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"app",
+						"auth",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "检索app未授权过的api信息",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "111",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "apiName",
+							"value": "6iuk",
+							"type": "text"
+						},
+						{
+							"key": "apiGroupId",
+							"value": "4878d5a9-5d43-41f2-a6bd-a539c08b80ea",
+							"type": "text"
+						},
+						{
+							"key": "appId",
+							"value": "52ded7e0-47ed-4a68-b5db-e1c9134b9955",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.124:8088/beaver/app/unauthForAdmin",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"124"
+					],
+					"port": "8088",
+					"path": [
+						"beaver",
+						"app",
+						"unauthForAdmin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

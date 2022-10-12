@@ -1,0 +1,51 @@
+{
+  "id": "3320158",
+  "name": "dzmz",
+  "font_family": "dzmz",
+  "css_prefix_text": "dzmz-",
+  "description": "电子码证",
+  "glyphs": [
+    {
+      "icon_id": "28901506",
+      "name": "tms",
+      "font_class": "tms",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "28899550",
+      "name": "fwfl",
+      "font_class": "fwfl",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "28899551",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "28899552",
+      "name": "yrzjg",
+      "font_class": "yrzjg",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "28899553",
+      "name": "sfrzl",
+      "font_class": "sfrzl",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "28886662",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}
